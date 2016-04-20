@@ -1,0 +1,318 @@
+edit()
+
+body
+	margin 0 auto
+	padding 0
+	
+	font-family Abel, ANton, sans-serif
+	font-size 16px
+	font-size 1rem
+	min-height 100vh
+	
+	//background-image: url('img/pc.jpg')
+	/*background-repeat no-repeat
+	background-position center center*/
+	
+//main
+//	margin-top 7em
+
+
+.header
+	padding 0.5em 3%
+	+above(b2)
+		display flex
+		justify-content space-between
+	.logo
+		position relative
+		display  flex
+		justify-content space-between
+		align-items center
+		.logotipo
+			width 80%
+			display flex
+			flex-direction row
+			align-items center
+			
+			.isotipo
+				img
+					width 100% 
+					display block
+			.slogan
+				img
+					width 100% 
+					display block
+			+above(b2)
+				width 100%
+		.toggle-menu
+			//align-self center
+			//justify-content center
+			
+			color #143856ff
+			font-size 2em
+			margin-right 2% 
+
+			/*+above(580px)
+				position absolute
+				top 0.5em
+				right 0*/
+			+above(b2)
+				display none
+	
+	
+	.main-nav
+		align-self right
+		display flex
+		flex-direction column
+		justify-content space-around
+		&__cont
+			display none
+			+above(b2)
+				display flex!important
+		&__list
+			
+				
+		&__item
+			display flex
+			flex-direction column
+			+above(b2)
+				flex-direction row
+				//justify-content space-between
+				
+		&__link
+			padding 0 0.5em
+			text-decoration none
+			font-family Abel
+			font-size 1.03em
+			color #23282cff
+			&:hover
+				//background rgba(0, 0, 0, .3)
+				background blue
+				color white
+				
+	.menu-social
+		text-align center
+		display none
+		/*+above(580px)
+			position absolute
+			top 4em
+			right 1.5em*/
+
+		+above(b2)
+			//position static
+			align-self flex-end
+			display block
+		&__list
+		&__item
+			+above(b1)
+				display flex
+		&__link
+			padding 0.25em
+			text-decoration none
+			font-size 1.6em
+			color grey
+						
+
+.banner
+		
+	&__cont
+		display flex
+		//margin 1em 0
+		//align-items center
+		flex-direction column
+		+above(b3)
+			flex-direction row
+			align-items center
+		
+	&__main
+		width 100%
+		/*+above(b3)
+			width 60%*/
+		
+		+above(b3)
+			width 70%
+		.header-banner
+			line-height 1
+			width 100%
+			text-align center
+			
+			+above(b3)
+				h1
+					width 430px
+				p
+					width 90%
+			h1
+				margin 0
+	&__form
+		
+		width 80%
+		margin auto
+		//padding 5%
+		//flex-grow 3
+		padding 1em
+		/*+above(b3)
+			width 50%*/
+			
+		+above(b3)
+			width 380px
+
+	
+
+.valores
+	&__header
+	&__cont
+		
+	&__item
+		
+		figure
+			padding 0
+			margin 3em 0
+			//margin 1%
+			.valores-img
+				//margin-top 1em
+				//margin-right 2%
+				margin auto
+				width 120px
+				
+			figcaption
+				margin auto
+				text-align center
+				width 90%
+				h4
+					color grey
+				//align-self center
+			+above(b1)
+				display flex
+				margin 0
+				.valores-img
+					//margin-top 1em
+					margin-right 1em
+					margin auto
+					//width 120px
+					//margin 0
+					
+				figcaption
+					//margin 0
+					text-align left
+					width 66%
+				
+					
+					//align-self center
+					
+.servicios
+	//text-align center
+	&__header
+	&__cont
+		
+	&__item
+		margin-bottom 2.5em
+		figure
+			.servicio-img
+				//margin auto
+				margin auto
+				margin-bottom 1em
+				img
+					border-radius 50%
+			figcaption
+				text-align center
+				a
+					text-decoration none
+	&__button
+		padding 1.5em 0
+		text-align center
+	
+
+.clientes
+	&__cont
+		//margin 0
+		//padding 0
+	&__item
+		display flex
+		border 2px solid grey
+		border-radius 10px
+		img
+			align-self center
+			width 80%
+			margin auto
+
+	&__button
+		padding 1.5em 0
+		text-align center
+		
+.equipo
+	&__header
+		margin-bottom 3em
+	&__cont
+	&__item
+		color white
+		//padding 0 5%
+		+above(b1)
+			
+			display flex
+			flex-direction row
+			flex-wrap wrap
+			justify-content center
+		figure
+			margin 0
+			background white
+			img
+				padding-top 1em
+			
+			figcaption
+				padding 1em 0
+				p
+					margin 0
+			//background white
+
+
+
+.clientes
+	display none
+	+above(b1)
+		display block
+	&__cont
+		padding-bottom 2em
+
+.footer
+	.contacto
+		padding 1em 0
+		text-align center
+		p
+			color white
+		+above(b1)
+			display flex
+			justify-content space-between
+			padding 2.5em 2em
+			text-align left
+			.contacto-info
+				display flex
+				flex-direction column
+				p
+					color white
+					margin 0
+		.menu-social
+			&__list
+			&__item
+				+above(b1)
+					display flex
+			&__link
+				padding 0.25em
+				font-size 1.5em
+				text-decoration none
+				color white
+				
+					
+	.footer-credits
+		padding 1em 2em 
+		display flex
+		justify-content space-between
+		color white
+		&__copyright
+		&__author
+			text-align center
+			a
+				text-decoration none
+				span
+					&:hover
+						background none
+					
+

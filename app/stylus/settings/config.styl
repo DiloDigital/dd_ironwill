@@ -1,0 +1,110 @@
+// Variables
+
+black = #000
+white = #ffffff
+
+grey_light = #2b2b2aff
+grey = #38434cff
+grey_medium = #404b51ff
+grey_dark = #2d3539ff
+
+orange = #ea5b22ff
+
+blue_sky = #DCF0FDFF 
+blue_light = #0077B1FF
+blue = #143856FF
+blue_dark = #162739FF
+
+
+//red = #D42124FF
+//yellow = #f6c31b
+//verde = #009688
+//magenta = #af004d
+//azul =  #39A4DD
+//primary_text = #514742
+//verde_dark = #618342
+//purpura = #930050
+
+
+// Media
+
+b1 = 30em // 480px
+b2 = 48em // 768px
+b3 = 64em // 1024px
+b4 = 75em // 1200px
+
+
+// Grid & Containers
+
++above(b1)
+
+	[class*=mob-]
+		display flex
+		flex-direction row
+		flex-wrap wrap
+		justify-content center
+		& > *
+			width calc(100% * 1 / 1 - 2em - 0.1px)
+			margin 0.7em
+	
+		
+	[class*="mob-2"]
+		& > *
+			width calc(100% * 1 / 2 - 2em - .01px)
+			
++above(640px)
+	[class*="-vga-2"]
+		& > *
+			width calc(100% * 1 / 2 - 2em - .01px)
+	[class*="-vga-3"]
+		& > *
+			width calc(100% * 1 / 3 - 2em - .01px)
+			
++above(b2)
+	[class*="-tab-2"]
+		& > *
+			width calc(100% * 1 / 2 - 2em - .01px)
+	[class*="-tab-3"]
+		& > *
+			width calc(100% * 1 / 3 - 2em - .01px)
+	[class*="-tab-4"]
+		& > *
+			width calc(100% * 1 / 4 - 2em - .01px)
+		
+			
++above(b3)			
+	[class*="-pc-3"]
+		& > *
+			width calc(100% * 1 / 3 - 2em - .01px)
+	[class*="-pc-4"]
+		& > *
+			width calc(100% * 1 / 4 - 2em - .01px)
+	[class*="-pc-5"]
+		& > *
+			width calc(100% * 1 / 5 - 2em - .01px)
+
++above(1100px)			
+	[class*="-max-3"]
+		& > *
+			width calc(100% * 1 / 3 - 2em - .01px)
+
+	
+.box
+	padding 4em 5%
+.box-min
+	padding 4em 10%
+	
++above(b2)
+	.box
+		padding 4em 10%
+	.box-min
+		padding 4em 15%
+
++above(b3)
+	/*.box
+		padding 4em 5%*/
+	
+	.box-min
+		padding 4em 7%
+	.box-extra
+		padding 4em 5%

@@ -1,0 +1,28 @@
+
+<div id="contactanos" class="banner__form bg--blue">
+  <form action="mailer.php" method="POST" id="ajax-contact" class="form">
+    <fieldset id="inputs">
+      <legend>Datos Personales </legend>
+      <div class="form__group">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" name="nombre" placeholder="Nombre completo" required="required" class="form__control"/>
+      </div>
+      <div class="form__group">
+        <label for="correo">Correo</label>
+        <input id="correo" type="correo" name="correo" placeholder="Correo electrónico" required="required" class="form__control"/>
+      </div>
+      <div class="form__group">
+        <label for="telefono">Teléfono</label>
+        <input id="telefono" type="text" name="telefono" placeholder="Teléfono" required="required" class="form__control"/>
+      </div>
+      <div class="form__group">
+        <label mensaje="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required="required" class="form__control"></textarea>
+      </div>
+    </fieldset>
+    <div class="form__submit">
+      <button id="submit" class="btn-submit">Contáctanos</button>
+    </div>
+    <div id="form-messages"></div>
+  </form>
+</div>
