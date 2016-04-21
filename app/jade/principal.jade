@@ -1,7 +1,7 @@
 main#main
-	section.banner(role="banner").box.bg--grey-dark
+	section.banner(role="banner").box-min.bg--grey-dark
 		div.max-width
-			.header-banner
+			.header-banner.text--center
 				h1.title--main TU EQUIPO TIENE MUCHO MÁS QUE DAR 
 				p.text--main.text--white Consultora dedicada a entregar servicios de comunicación motivacional y de responsabilidad social para nuestros clientes. Con el objetivo de generar un impacto positivo en nuestros público y su cultura interna organizacional
 			.banner__cont
@@ -46,7 +46,7 @@ main#main
 		div.max-width
 			.servicios__header.text--center
 				h2.title--sub2 ¿Que hacemos?
-			.servicios__cont.mob-mob-2-pc-3
+			.servicios__cont.mob-vga-2-pc-3
 				.servicios__item
 					figure
 						a(href="#")
@@ -75,8 +75,11 @@ main#main
 			.servicios__button
 				a(href="#contactanos").btn-submit Contáctanos
 
-	section.banner
-		div.max-width
-			.banner-middle__cont
-				.banner-middle__frubio
-					img(src="img/banner-middle.jpg", alt="")
+	section.banner-middle
+		.banner-middle__cont
+			.banner-middle__img-mob
+				img(src="img/banner-middle_mob.jpg", class="img-responsive", alt="")
+			.banner-middle__img-pc
+				img(src="img/banner-middle_pc.jpg", class="img-responsive", alt="")
+			.banner-middle__info
+				p.text--center Logra tus metas, ahora y siempre

@@ -92,19 +92,26 @@ b4 = 75em // 1200px
 .box
 	padding 4em 5%
 .box-min
-	padding 4em 10%
+	padding 4em 8%
 	
++above(640px)
+	.box
+		padding 4em 10%
+	.box-min
+		padding 4em 16%
+
+
 +above(b2)
 	.box
 		padding 4em 10%
 	.box-min
-		padding 4em 15%
+		padding 4em 8%
 
 +above(b3)
 	/*.box
 		padding 4em 5%*/
 	
 	.box-min
-		padding 4em 7%
+		padding 4em 14%
 	.box-extra
 		padding 4em 5%
