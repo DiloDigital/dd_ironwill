@@ -1,4 +1,4 @@
-edit()
+//edit()
 
 body
 	margin 0 auto
@@ -8,13 +8,6 @@ body
 	font-size 16px
 	font-size 1rem
 	min-height 100vh
-	
-	//background-image: url('img/pc.jpg')
-	/*background-repeat no-repeat
-	background-position center center*/
-	
-//main
-//	margin-top 7em
 
 
 .header
@@ -44,20 +37,11 @@ body
 			+above(b2)
 				width 100%
 		.toggle-menu
-			//align-self center
-			//justify-content center
-			
 			color #143856ff
 			font-size 2em
 			margin-right 2% 
-
-			/*+above(580px)
-				position absolute
-				top 0.5em
-				right 0*/
 			+above(b2)
 				display none
-	
 	
 	.main-nav
 		align-self right
@@ -77,31 +61,24 @@ body
 			
 			+above(b2)
 				flex-direction row
-				//justify-content space-between
 				
 		&__link
-			width 6em
-			text-align center
-			//padding 0 1.5em
+			text-align left
 			text-decoration none
 			font-family Abel
 			font-size 1.03em
 			color #23282cff
 			&:hover
-				//background rgba(0, 0, 0, .3)
 				background grey_dark
 				color white
+			+above(b2)
+				width 6em
+				text-align center
 				
 	.menu-social
 		text-align center
 		display none
-		/*+above(580px)
-			position absolute
-			top 4em
-			right 1.5em*/
-
 		+above(b2)
-			//position static
 			align-self flex-end
 			display block
 		&__list
@@ -138,18 +115,11 @@ body
 	&__form
 		box-sizing border-box 
 		width 100%
-		//margin auto
-		//padding 5%
-		//flex-grow 3
 		padding 1em
 		+above(b2)
 			width 50%
 		+above(b3)
 			width 45%
-			
-	
-
-	
 
 .valores
 	&__header
@@ -160,10 +130,7 @@ body
 		figure
 			padding 0
 			margin 3em 0
-			//margin 1%
 			.valores-img
-				//margin-top 1em
-				//margin-right 2%
 				margin auto
 				width 120px
 				
@@ -173,32 +140,26 @@ body
 				width 90%
 				h4
 					color grey
-				//align-self center
 			+above(b1)
 				display flex
 				margin 0
-				.valores-img
-					//margin-top 1em
-					margin-right 1em
-					margin auto
-					//width 120px
-					//margin 0
-					
 				figcaption
-					//margin 0
+					margin 0
 					text-align left
 					width 66%
-				
+			+above(b2)
+				.valores-img
+					margin 0
+				figcaption
+					margin-left 4%
 					
-					//align-self center
 					
 .servicios
-	//text-align center
 	&__header
 	&__cont
 		
 	&__item
-		margin-bottom 2.5em
+		margin-bottom 1em
 		figure
 			+above(640px)
 				margin 0
@@ -206,11 +167,10 @@ body
 					width 100%
 			
 			.servicio-img
-				//margin auto
 				margin auto
 				margin-bottom 1em
 				+above(b1)
-					width 60%
+					width 80%
 				img
 					border-radius 50%
 					display block
@@ -251,15 +211,17 @@ body
 			font-size 3.125em
 			color white
 	
-
-		
 .equipo
 	&__header
 		margin-bottom 3em
 	&__cont
+		padding 0 3em
+		+above(b3)
+			padding 0
+		
 	&__item
 		color white
-		//padding 0 5%
+		margin-bottom 1em
 		+above(b1)
 			
 			display flex
@@ -276,16 +238,18 @@ body
 				padding 1em 0
 				p
 					margin 0
-			//background white
 
 .clientes
-	display none
-	+above(b1)
-		display block
+	&__header
+		display none
+		+above(b1)
+			display block
+
 	&__cont
+		display none
+		+above(b1)
+			display flex
 		padding-bottom 2em
-		//margin 0
-		//padding 0
 	&__item
 		display flex
 		border 2px solid grey
@@ -317,11 +281,13 @@ body
 				p
 					color white
 					margin 0
+					font-size 1.1em
 		.menu-social
 			&__list
 			&__item
 				+above(b1)
 					display flex
+					justify-content flex-end
 			&__link
 				padding 0.25em
 				font-size 1.5em
@@ -339,8 +305,7 @@ body
 			text-align center
 			a
 				text-decoration none
-				span
-					&:hover
-						background none
+				p
+					color yellow
 					
 
