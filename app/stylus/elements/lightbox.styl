@@ -1,0 +1,74 @@
+.lightbox-content
+	display flex
+	width 100%
+	height 100vh
+
+#modal
+	width  100%
+	height 100vh
+	background rgba(0, 0, 0, 0.7) 
+	position fixed
+	top -100vh
+	left 0
+	display flex
+	align-items center
+	justify-content center
+	text-align: center
+	transition all 1s
+	opacity 0
+	z-index 50
+	
+#abrir-modal
+	display none
+
+#cerrar-modal
+	display none
+
+#abrir-modal + label
+	cursor pointer
+
+#cerrar-modal + label
+	color #ffff
+	font-size  20px
+	padding 15px
+	z-index 100
+	background green
+	height 15px
+	width 15px
+	line-height 15px
+	border-radius 50%
+	cursor pointer
+	position fixed
+	right 195px
+	top -100vw
+	
+	animation modal 1s 1s forwards
+	visibility  hidden
+	opacity 0
+	
+#abrir-modal:checked ~ #modal
+	top 0
+	animation modal 1s 1s forwards
+	visibility  hidden
+	
+#abrir-modal:checked ~ #cerrar-modal + label
+	top 85px
+	animation modal 1s 1s forwards
+	visibility  hidden
+
+
+#cerrar-modal:checked + label
+	top -100vw
+	animation modal 1s 1s forwards
+	visibility  hidden
+		
+#cerrar-modal:checked ~ #modal
+	top -100vw
+	animation modal 1s 1s forwards
+	visibility  hidden
+	
+
+@keyframes modal
+	100%
+		visibility visible
+		opacity 1

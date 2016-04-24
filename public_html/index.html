@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <title>Ironwill</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css"/><link rel="stylesheet" type="text/css" href="shadowbox.css">
 </head>
 <body>
   <header id="header" role="presentation" class="header bg--white">
@@ -34,7 +34,9 @@
           <p class="text--main text--white">Consultora dedicada a entregar servicios de comunicación motivacional y de responsabilidad social para nuestros clientes. Con el objetivo de generar un impacto positivo en nuestros público y su cultura interna organizacional.</p>
         </div>
         <div class="banner__cont">
-          <div class="banner__main"><a href="#" id="modal" class="content"><img src="img/ironwill-video.jpg" alt="" class="img-responsive"/></a></div>
+          <div class="banner__main">
+            <div class="video-banner"><a rel="shadowbox;width=405;height=340;" title="Ironwill" href="http://www.youtube.com/v/W5BPCpYousY&amp;rel=0&amp;autoplay=1">Ver video</a></div>
+          </div>
           <div id="contactanos" class="banner__form bg--blue">
             <form action="mailer.php" method="POST" id="ajax-contact" class="form">
               <fieldset id="inputs">
@@ -57,7 +59,7 @@
                 </div>
               </fieldset>
               <div class="form__submit">
-                <button id="submit" class="btn-submit">contáctanos</button>
+                <button id="submit" class="btn-submit">contáctanos<img src="img/ironwill-video.jpg" alt="" class="img-responsive"/></button>
               </div>
               <div id="form-messages"></div>
             </form>
@@ -236,4 +238,9 @@
   </footer>
   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="js/main.js"></script>
+  <script type="text/javascript" src="shadowbox.js"></script>
+  <script type="text/javascript">
+    Shadowbox.init();
+    
+  </script>
 </body>

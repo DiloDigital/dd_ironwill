@@ -6,10 +6,11 @@ main#main
 				p.text--main.text--white Consultora dedicada a entregar servicios de comunicación motivacional y de responsabilidad social para nuestros clientes. Con el objetivo de generar un impacto positivo en nuestros público y su cultura interna organizacional.
 			.banner__cont
 				.banner__main
-					a(href="#")#modal.content
-						img(src="img/ironwill-video.jpg", class="img-responsive", alt="")
+					.video-banner
+						a(rel='shadowbox;width=405;height=340;', title='Ironwill', href='http://www.youtube.com/v/W5BPCpYousY&rel=0&autoplay=1') Ver video
 				include form.jade
-
+						img(src="img/ironwill-video.jpg", class="img-responsive", alt="")
+	
 	section.valores.bg--blue-sky.box
 		div.max-width
 			.valores__cont.mob-tab-2
