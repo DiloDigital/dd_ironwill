@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    title Coaching
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+    link(rel="stylesheet", href="style.css")
+
+body
+    include header.jade
+    main#main
+    section.banner(role="banner").box-min.bg--grey-dark
+        div.max-width
+            .header-banner.text--center
+                h1.title--main COACHING INTEGRATIVO
+                p.text--main.text--white Superación y el máximo desarrollo profesional y personal a través de una profunda transformación de perspectiva y aumento del compromiso todo con ayuda del trabajo en conjunto y charlas dinámicas.
+            .banner__cont
+                .banner__main
+                    .video-banner
+                        a(href="#")
+                            img(src="img/ironwill-video.jpg", class="img-responsive", alt="")
+                include form.jade
+
+    section.valores.bg--blue-sky.box
+        div.max-width
+            .valores__cont.mob-tab-2
+                .valores__item
+                    figure
+                        .valores-img
+                            img(src="img/productividad.png", class="img-responsive", alt="")
+                        figcaption
+                            h4.title--sub4 Desempeño y productividad:
+                            p.text--p4 A través del coaching se favorece a cada uno de los individuos, y en consecuencia a sus equipos para que se desempeñen de manera correcta y efectiva, algo que la capacitación tradicional no lo consigue.
+                .valores__item
+                    figure
+                        .valores-img
+                            img(src="img/motivacion.png", class="img-responsive", alt="")
+                        figcaption
+                            h4.title--sub4 Mayor aprendizaje:
+                            p.text--p4 El coaching favorece el aprendizaje y cataliza dicho proceso, sin perdidas de tiempo, ya que permite lograrlo sin dejar las tareas habituales ni el lugar de trabajo.
+                .valores__item
+                    figure
+                        .valores-img
+                            img(src="img/aprendizaje.png", class="img-responsive", alt="")
+                        figcaption
+                            h4.title--sub4 Relación laboral:
+                            p.text--p4 El empleo efectivo de técnicas de coaching para el desarrollo de su gente requiere de una mayor consciencia en las respuestas que dan a cada una de las circunstancias que se presentan en el ámbito laboral. Es por ello que nos enfocamos en el bienestar de las personas que quieren lograr sus objetivos.
+                .valores__item
+                    figure
+                        .valores-img
+                            img(src="img/crecimiento.png", class="img-responsive", alt="")
+                        figcaption
+                            h4.title--sub4 Creatividad: 
+                            p.text--p4 A partir de ello se fomenta el aprendizaje y el descubrimiento de alternativas creativas para producir mayor efectividad en lo que cada quien se proponga. La actitud de aprendizaje y diálogo posibilita un entusiasmo creativo en lugar del miedo al ridículo, burla o a la descalificación.
+    
+    article.servicio-coaching.bg--white.box#servicios
+        div.max-width
+            .servicio-coaching__item.text--center
+                .servicio-coaching__header
+                    h2.title--sub2 ¿Que hacemos?
+                    p.text--p2 Ofrecemos un servicio a la medida de asesoramiento profesional independiente que ayuda a organizaciones a alcanzar los objetivos planeados mediante soluciones de problemas, el descubrimiento y evaluación de nuevas oportunidades, mejoría de aprendizaje y por último, la puesta en práctica en el campo.
+                .servicio-coaching__img
+                    img(src="img/coaching-img.jpg", class="img-responsive", alt="")
+            .servicios__button
+                a(href="#contactanos").btn-submit Contáctanos
+    
+    section.banner-middle
+        .banner-middle__cont
+            .banner-middle__img-mob
+                img(src="img/banner-middle_mob.jpg", class="img-responsive", alt="")
+            .banner-middle__img-pc
+                img(src="img/banner-middle_pc.jpg", class="img-responsive", alt="")
+            .banner-middle__info
+                p.text--center El fracaso no es una opción. Todo el mundo tiene que triunfar.
+
+    include equipo.jade
+    include clientes.jade
+    include footer.jade
+
+    script(src='//code.jquery.com/jquery-1.12.0.min.js')
+    script(src='js/main.js')

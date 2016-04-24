@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Charlas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header id="header" role="presentation" class="header bg--white">
+    <div class="logo"><a href="#" class="logotipo">
+        <div class="isotipo"><img src="img/ironwill-isotipo.png" width="100" heigth="80" alt=""/></div>
+        <div class="slogan"><img src="img/ironwill-slogan.png" width="300" heigth="80" alt=""/></div></a>
+      <div id="menu" class="toggle-menu icon-menu"></div>
+    </div>
+    <nav id="navigation" role="navigation" class="main-nav">
+      <div class="menu-social">
+        <ul class="menu-social__list non-margin">
+          <li class="menu-social__item"><a href="#" class="menu-social__link icon-facebook"></a><a href="#" class="menu-social__link icon-twitter"> </a><a href="#" class="menu-social__link icon-instagram"></a></li>
+        </ul>
+      </div>
+      <div id="target" class="main-nav__cont">
+        <ul class="main-nav__list non-margin">
+          <li class="main-nav__item list-none"><a href="#servicios" class="main-nav__link">Servicios</a><a href="#servicios" class="main-nav__link">Blog</a><a href="#servicios" class="main-nav__link">RSE</a><a href="#contactanos" class="main-nav__link">Contáctenos</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main id="main"></main>
+  <section role="banner" class="banner box-min bg--grey-dark">
+    <div class="max-width">
+      <div class="header-banner text--center">
+        <h1 class="title--main">CHARLAS MOTIVACIONALES </h1>
+        <p class="text--main text--white">Embajadores y consultores en deportes y liderazgo, cumplimos junto a ti todas tus metas. Nunca hay que rendirse, solo hay que ver hacia adelante.</p>
+      </div>
+      <div class="banner__cont">
+        <div class="banner__main">
+          <div class="video-banner"><a href="#"><img src="img/ironwill-video.jpg" alt="" class="img-responsive"/></a></div>
+        </div>
+        <div id="contactanos" class="banner__form bg--blue">
+          <form action="mailer.php" method="POST" id="ajax-contact" class="form">
+            <fieldset id="inputs">
+              <legend>Datos Personales </legend>
+              <div class="form__group">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" name="nombre" placeholder="Nombre completo" required="required" class="form__control"/>
+              </div>
+              <div class="form__group">
+                <label for="correo">Correo</label>
+                <input id="correo" type="correo" name="correo" placeholder="Correo electrónico" required="required" class="form__control"/>
+              </div>
+              <div class="form__group">
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" type="text" name="telefono" placeholder="Teléfono" required="required" class="form__control"/>
+              </div>
+              <div class="form__group">
+                <label mensaje="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required="required" class="form__control"></textarea>
+              </div>
+            </fieldset>
+            <div class="form__submit">
+              <button id="submit" class="btn-submit">contáctanos</button>
+            </div>
+            <div id="form-messages"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="valores bg--blue-sky box">
+    <div class="max-width">
+      <div class="valores__cont mob-tab-2">
+        <div class="valores__item">
+          <figure>
+            <div class="valores-img"><img src="img/productividad.png" alt="" class="img-responsive"/></div>
+            <figcaption>
+              <h4 class="title--sub4">Adaptabilidad:</h4>
+              <p class="text--p4">Empapados del espíritu de cambio y responsabilidad, te retamos a hacer lo mismo que has hecho hasta ahora, aunque no resulta una estrategia efectiva para mejorar. Cada vez es más evidente que la flexibilidad y la resiliencia constituyen factores de supervivencia en cualquier nivel ya sea personal o empresarial.</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="valores__item">
+          <figure>
+            <div class="valores-img"><img src="img/motivacion.png" alt="" class="img-responsive"/></div>
+            <figcaption>
+              <h4 class="title--sub4">Perder el miedo:</h4>
+              <p class="text--p4">Cumple todas tus metas al creer totalmente en tus capacidades físicas y mentales, deja de lado la zona de confort que no te deja crecer. El miedo es el peor enemigo del crecimiento por temer a lo desconocido. Muchas veces puede ser cómodo mantenernos la misma dinámica de vida porque ya lo dominas, pero no alcanzas tu máximo nivel de eficiencia. </p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="valores__item">
+          <figure>
+            <div class="valores-img"><img src="img/aprendizaje.png" alt="" class="img-responsive"/></div>
+            <figcaption>
+              <h4 class="title--sub4">Confianza:</h4>
+              <p class="text--p4">Creer en uno mismo es la principal herramienta para lograr grandes beneficios, ya sean personales o con terceros. Si tú crees que no podrás alcanzar tus metas porque no posees las capacidades para hacerlo, no lo lograrás. Claro que esto no se deberá a tus capacidades sino a tu confianza de llevar a cabo tus metas.</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="valores__item">
+          <figure>
+            <div class="valores-img"><img src="img/crecimiento.png" alt="" class="img-responsive"/></div>
+            <figcaption>
+              <h4 class="title--sub4">Mayor efectividad: </h4>
+              <p class="text--p4">En una atmósfera en la cual las personas son valoradas por su capacidad de aprender, impera la iniciativa, y al encontrarse ante un imprevisto o una emergencia la gente toma acción y riesgos incluso antes de que les digan qué hacer.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <article id="servicios" class="servicio-charlas bg--white box">
+    <div class="max-width">
+      <div class="servicio-charlas__item text--center">
+        <div class="servicio-charlas__header">
+          <h2 class="title--sub2">¿Que hacemos?</h2>
+          <p class="text--p2">Mediante métodos adecuados de explotación llevamos a cabo el proceso minero el cual involucra diferentes etapas para desarrollar un proyecto minero, dentro de ellas se encuentran; la búsqueda y estimación de recursos, desarrollo de proyecto u obra, arranque, manejo de materiales y conclusión.</p>
+        </div>
+        <div class="servicio-charlas__img"><img src="img/charlas-img.jpg" alt="" class="img-responsive"/></div>
+      </div>
+      <div class="servicios__button"><a href="#contactanos" class="btn-submit">Contáctanos</a></div>
+    </div>
+  </article>
+  <section class="banner-middle">
+    <div class="banner-middle__cont">
+      <div class="banner-middle__img-mob"><img src="img/banner-middle_mob.jpg" alt="" class="img-responsive"/></div>
+      <div class="banner-middle__img-pc"><img src="img/banner-middle_pc.jpg" alt="" class="img-responsive"/></div>
+      <div class="banner-middle__info">
+        <p class="text--center">Ganar no lo es todo, pero sí lo es querer ganar.</p>
+      </div>
+    </div>
+  </section>
+  <section class="equipo bg--grey-dark box">
+    <div class="max-width">
+      <div class="equipo__header text--center">
+        <h2 class="title--sub2">El equipo a tu servicio</h2>
+      </div>
+      <div class="equipo__cont mob-2-pc-4 text--center">
+        <div class="equipo__item">
+          <figure><img src="img/hector_arriagada.jpg" alt="" class="img-responsive"/>
+            <figcaption>
+              <p class="text--p2">Hector Arriagada: Co-founder</p>
+              <p class="text--p2">Ingeniero Civil Industrial</p>
+              <p class="text--p2">hector@ironwill.work</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="equipo__item">
+          <figure><img src="img/sebastian_nunez.jpg" alt="" class="img-responsive"/>
+            <figcaption>
+              <p class="text--p2">Sebastian Nuñez: Co- founder</p>
+              <p class="text--p2">Kinesiólogo</p>
+              <p class="text--p2">sebastian@ironwill.work</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="equipo__item">
+          <figure><img src="img/javiera_munoz.jpg" alt="" class="img-responsive"/>
+            <figcaption>
+              <p class="text--p2">Javiera Muñoz: Community manager</p>
+              <p class="text--p2">Especialista en Marketing</p>
+              <p class="text--p2">javiera@ironwill.work</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="equipo__item">
+          <figure><img src="img/leslie_arriagada.jpg" alt="" class="img-responsive"/>
+            <figcaption>
+              <p class="text--p2">Leslie Arriagada</p>
+              <p class="text--p2">Asesora comercial</p>
+              <p class="text--p2">leslie@ironwill.work</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="clientes bg--white box">
+    <div class="max-width">
+      <div class="clientes__header text--center">
+        <h2 class="title--sub2">Ellos confían en nosotros</h2>
+      </div>
+      <div class="clientes__cont mob-2-vga-3-pc-5">
+        <div class="clientes__item"><a href="#"><img src="img/01_papamono.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/02_sak.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/03_aha.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/04_beyondenglish.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/05_conac.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/06_ninoycancer.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/07_flosinlimites.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/08_killcliff.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/09_accioncrossfit.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/10_adapkine.jpg" alt="" class="img-responsive"/></a></div>
+      </div>
+      <p class="text--p2 text--center">No dudes en comunicarte. Te esperamos.</p>
+      <div class="clientes__button"><a href="#contactanos" class="btn-submit">Contáctanos</a></div>
+    </div>
+  </section>
+  <footer role="contentinfo" class="footer">
+    <div class="contacto bg--grey-medium">
+      <div class="contacto-logo"><img src="img/ironwill-isotipo.png" width="100" heigth="80" alt=""/></div>
+      <div class="menu-social">
+        <ul class="menu-social__list non-margin">
+          <li class="menu-social__item"><a href="#" class="menu-social__link icon-facebook"></a><a href="#" class="menu-social__link icon-twitter"> </a><a href="#" class="menu-social__link icon-instagram"></a></li>
+        </ul>
+        <div class="contacto-info">
+          <p class="correo">hola@ironwill.work</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-credits bg--grey-dark">
+      <div class="footer-credits__copyright">
+        <p class="text--p3 text--white">Todos los derechos reservados</p>
+      </div>
+      <div class="footer-credits__author"><a href="http://dilodigital.com" target="_blank">
+          <p class="text--p3 text--white">Diseñado por Dilodigital.com  </p></a></div>
+    </div>
+  </footer>
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/main.js"></script>
+</body>

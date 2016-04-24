@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Crecimiento Deportivo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header id="header" role="presentation" class="header bg--white">
+    <div class="logo"><a href="#" class="logotipo">
+        <div class="isotipo"><img src="img/ironwill-isotipo.png" width="100" heigth="80" alt=""/></div>
+        <div class="slogan"><img src="img/ironwill-slogan.png" width="300" heigth="80" alt=""/></div></a>
+      <div id="menu" class="toggle-menu icon-menu"></div>
+    </div>
+    <nav id="navigation" role="navigation" class="main-nav">
+      <div class="menu-social">
+        <ul class="menu-social__list non-margin">
+          <li class="menu-social__item"><a href="#" class="menu-social__link icon-facebook"></a><a href="#" class="menu-social__link icon-twitter"> </a><a href="#" class="menu-social__link icon-instagram"></a></li>
+        </ul>
+      </div>
+      <div id="target" class="main-nav__cont">
+        <ul class="main-nav__list non-margin">
+          <li class="main-nav__item list-none"><a href="#servicios" class="main-nav__link">Servicios</a><a href="#servicios" class="main-nav__link">Blog</a><a href="#servicios" class="main-nav__link">RSE</a><a href="#contactanos" class="main-nav__link">Contáctenos</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main id="main"></main>
+  <section role="banner" class="banner box-min bg--grey-dark">
+    <div class="max-width">
+      <div class="header-banner text--center">
+        <h1 class="title--main">CRECIMIENTO DEPORTIVO </h1>
+        <p class="text--main text--white">Se promueven y difunden los valores deportivos entre los jovenes que quieran desarrollarse en liderazgo, responsabilidad, compromiso y sobre todo respeto mutuo, con los cuales se genera un buen crecimiento en el proceso de enseñanza y aprendizaje.</p>
+      </div>
+      <div class="banner__cont">
+        <div class="banner__main">
+          <div class="video-banner"><a href="#"><img src="img/ironwill-video.jpg" alt="" class="img-responsive"/></a></div>
+        </div>
+        <div id="contactanos" class="banner__form bg--blue">
+          <form action="mailer.php" method="POST" id="ajax-contact" class="form">
+            <fieldset id="inputs">
+              <legend>Datos Personales </legend>
+              <div class="form__group">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" name="nombre" placeholder="Nombre completo" required="required" class="form__control"/>
+              </div>
+              <div class="form__group">
+                <label for="correo">Correo</label>
+                <input id="correo" type="correo" name="correo" placeholder="Correo electrónico" required="required" class="form__control"/>
+              </div>
+              <div class="form__group">
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" type="text" name="telefono" placeholder="Teléfono" required="required" class="form__control"/>
+              </div>
+              <div class="form__group">
+                <label mensaje="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required="required" class="form__control"></textarea>
+              </div>
+            </fieldset>
+            <div class="form__submit">
+              <button id="submit" class="btn-submit">contáctanos</button>
+            </div>
+            <div id="form-messages"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="valores bg--blue-sky box">
+    <div class="max-width">
+      <div class="valores__cont mob-tab-2">
+        <div class="valores__item">
+          <figure>
+            <div class="valores-img"><img src="img/productividad.png" alt="" class="img-responsive"/></div>
+            <figcaption>
+              <h4 class="title--sub4">Capacitación:</h4>
+              <p class="text--p4">Hoy en día es una herramienta imprescindible de cambio positivo en las personas y en las empresas; no es solamente un entrenamiento o instrucción, es en sí mismo un concepto de educación.</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="valores__item">
+          <figure>
+            <div class="valores-img"><img src="img/motivacion.png" alt="" class="img-responsive"/></div>
+            <figcaption>
+              <h4 class="title--sub4">Universalidad:</h4>
+              <p class="text--p4">Los entrenamientos están dirigidos para cualquier edad y son ideales para personas que quieran entrenar en grupo. Son recomendables para quienes buscan bajar de peso, perder grasa, fortalecerse y mejorar su resistencia ya que este tipo de movimientos se trabaja la coordinación, fuerza, resistencia y agilidad. </p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="valores__item">
+          <figure>
+            <div class="valores-img"><img src="img/aprendizaje.png" alt="" class="img-responsive"/></div>
+            <figcaption>
+              <h4 class="title--sub4">Superación:</h4>
+              <p class="text--p4">Ayuda a la formación de las personas que actúan directamente en la educación del ser humano y que contribuyen a elevar su nivel de conocimientos, capacidades y habilidades con las que se adquieren un conjunto de experiencias positivas reales.</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="valores__item">
+          <figure>
+            <div class="valores-img"><img src="img/crecimiento.png" alt="" class="img-responsive"/></div>
+            <figcaption>
+              <h4 class="title--sub4">Funcionalidad: </h4>
+              <p class="text--p4">Mediante movimientos plenamente funcionales los entrenamientos se convierten en clases que incorporan en la vida cotidiana, por lo que te fortalecen y  preparan tu cuerpo para enfrentarse al día a día. Existen distintos tipos de ejercicios en el que cambian de nombre dependiendo de su complejidad, lo cual hace que tu cuerpo realice un entrenamiento completo.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <article id="servicios" class="servicio-crecimiento bg--white box">
+    <div class="max-width">
+      <div class="servicio-crecimiento__item text--center">
+        <div class="servicio-crecimiento__header">
+          <h2 class="title--sub2">¿Que hacemos?</h2>
+          <p class="text--p2">l propósito más importante de nuestra asesoría como consultores es intervenir de forma positiva a cada persona que así lo necesite, sin importar cualquier otro factor. Lo llevamos a cabo mediante un apoyo integral para quien así lo requiera, el objetivo en específico es lograr cumplir con todas las expectativas diseñadas previamente y así le permitan cambiar su actual punto de equilibrio a una percepción con mejor objetividad para alcanzar sus metas.</p>
+        </div>
+        <div class="servicio-crecimiento__img"><img src="img/crecimiento-img.jpg" alt="" class="img-responsive"/></div>
+      </div>
+      <div class="servicios__button"><a href="#contactanos" class="btn-submit">Contáctanos</a></div>
+    </div>
+  </article>
+  <section class="banner-middle">
+    <div class="banner-middle__cont">
+      <div class="banner-middle__img-mob"><img src="img/banner-middle_mob.jpg" alt="" class="img-responsive"/></div>
+      <div class="banner-middle__img-pc"><img src="img/banner-middle_pc.jpg" alt="" class="img-responsive"/></div>
+      <div class="banner-middle__info">
+        <p class="text--center">No puedes poner un límite a nada. Cuanto más sueñas, más lejos llegas.</p>
+      </div>
+    </div>
+  </section>
+  <section class="equipo bg--grey-dark box">
+    <div class="max-width">
+      <div class="equipo__header text--center">
+        <h2 class="title--sub2">El equipo a tu servicio</h2>
+      </div>
+      <div class="equipo__cont mob-2-pc-4 text--center">
+        <div class="equipo__item">
+          <figure><img src="img/hector_arriagada.jpg" alt="" class="img-responsive"/>
+            <figcaption>
+              <p class="text--p2">Hector Arriagada: Co-founder</p>
+              <p class="text--p2">Ingeniero Civil Industrial</p>
+              <p class="text--p2">hector@ironwill.work</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="equipo__item">
+          <figure><img src="img/sebastian_nunez.jpg" alt="" class="img-responsive"/>
+            <figcaption>
+              <p class="text--p2">Sebastian Nuñez: Co- founder</p>
+              <p class="text--p2">Kinesiólogo</p>
+              <p class="text--p2">sebastian@ironwill.work</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="equipo__item">
+          <figure><img src="img/javiera_munoz.jpg" alt="" class="img-responsive"/>
+            <figcaption>
+              <p class="text--p2">Javiera Muñoz: Community manager</p>
+              <p class="text--p2">Especialista en Marketing</p>
+              <p class="text--p2">javiera@ironwill.work</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="equipo__item">
+          <figure><img src="img/leslie_arriagada.jpg" alt="" class="img-responsive"/>
+            <figcaption>
+              <p class="text--p2">Leslie Arriagada</p>
+              <p class="text--p2">Asesora comercial</p>
+              <p class="text--p2">leslie@ironwill.work</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="clientes bg--white box">
+    <div class="max-width">
+      <div class="clientes__header text--center">
+        <h2 class="title--sub2">Ellos confían en nosotros</h2>
+      </div>
+      <div class="clientes__cont mob-2-vga-3-pc-5">
+        <div class="clientes__item"><a href="#"><img src="img/01_papamono.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/02_sak.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/03_aha.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/04_beyondenglish.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/05_conac.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/06_ninoycancer.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/07_flosinlimites.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/08_killcliff.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/09_accioncrossfit.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/10_adapkine.jpg" alt="" class="img-responsive"/></a></div>
+      </div>
+      <p class="text--p2 text--center">No dudes en comunicarte. Te esperamos.</p>
+      <div class="clientes__button"><a href="#contactanos" class="btn-submit">Contáctanos</a></div>
+    </div>
+  </section>
+  <footer role="contentinfo" class="footer">
+    <div class="contacto bg--grey-medium">
+      <div class="contacto-logo"><img src="img/ironwill-isotipo.png" width="100" heigth="80" alt=""/></div>
+      <div class="menu-social">
+        <ul class="menu-social__list non-margin">
+          <li class="menu-social__item"><a href="#" class="menu-social__link icon-facebook"></a><a href="#" class="menu-social__link icon-twitter"> </a><a href="#" class="menu-social__link icon-instagram"></a></li>
+        </ul>
+        <div class="contacto-info">
+          <p class="correo">hola@ironwill.work</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-credits bg--grey-dark">
+      <div class="footer-credits__copyright">
+        <p class="text--p3 text--white">Todos los derechos reservados</p>
+      </div>
+      <div class="footer-credits__author"><a href="http://dilodigital.com" target="_blank">
+          <p class="text--p3 text--white">Diseñado por Dilodigital.com  </p></a></div>
+    </div>
+  </footer>
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/main.js"></script>
+</body>

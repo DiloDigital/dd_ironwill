@@ -1,14 +1,13 @@
 main#main
-	section.banner(role="banner").box-min.bg--grey-dark
+	section.banner(role="banner").box-min
 		div.max-width
 			.header-banner.text--center
 				h1.title--main TU EQUIPO TIENE MUCHO MÁS QUE DAR 
-				p.text--main.text--white Consultora dedicada a entregar servicios de comunicación motivacional y de responsabilidad social para nuestros clientes. Con el objetivo de generar un impacto positivo en nuestros público y su cultura interna organizacional
+				p.text--main.text--white Consultora dedicada a entregar servicios de comunicación motivacional y de responsabilidad social para nuestros clientes. Con el objetivo de generar un impacto positivo en nuestros público y su cultura interna organizacional.
 			.banner__cont
 				.banner__main
-					.video-banner
-						a(href="#")
-							img(src="img/ironwill-video.jpg", class="img-responsive", alt="")
+					a(href="#")#modal.content
+						img(src="img/ironwill-video.jpg", class="img-responsive", alt="")
 				include form.jade
 
 	section.valores.bg--blue-sky.box

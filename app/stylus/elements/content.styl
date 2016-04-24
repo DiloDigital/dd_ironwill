@@ -1,4 +1,4 @@
-//edit()
+edit()
 
 body
 	margin 0 auto
@@ -251,13 +251,13 @@ body
 			display flex
 		padding-bottom 2em
 	&__item
-		display flex
-		border 2px solid grey
-		border-radius 10px
-		img
-			align-self center
-			width 80%
-			margin auto
+		a
+			display flex
+			img
+				margin auto
+				align-self center
+				width 70%
+
 
 	&__button
 		padding 1.5em 0
@@ -309,3 +309,87 @@ body
 					color yellow
 					
 
+
+
+// Charlas
+
+.servicio-charlas
+	&__item
+		display flex
+		flex-direction column
+		+above(b2)
+			flex-direction row
+			justify-content space-between
+			//align-items center
+			
+		
+	&__header
+		width 100%
+		+above(b2)
+			width 40%
+	&__img
+		width 90%
+		margin auto
+		padding-bottom 2em
+		img
+			width 70%
+			border-radius 0.5em
+		+above(b2)
+			width 60%
+			//margin 5% auto
+				
+
+// Coaching
+
+.servicio-coaching
+	&__item
+		display flex
+		flex-direction column
+		
+		+above(b2)
+			flex-direction row
+			justify-content space-between
+			//align-items center
+		
+	&__header
+		width 100%
+		
+		+above(b2)
+			width 40%
+	&__img
+		width 90%
+		margin auto
+		padding-bottom 2em
+		img
+			width 70%
+			border-radius 0.5em
+		+above(b2)
+			width 60%
+			//margin 5% auto
+
+// Comunidad
+
+.servicio-crecimiento
+	&__item
+		display flex
+		flex-direction column
+		+above(b2)
+			flex-direction row
+			justify-content space-between
+			//align-items center
+		
+	&__header
+		width 100%
+		+above(b2)
+			width 40%
+	&__img
+		width 90%
+		margin auto
+		padding-bottom 2em
+		img
+			width 70%
+			border-radius 0.5em
+		+above(b2)
+			width 60%
+			//margin 5% auto
+				

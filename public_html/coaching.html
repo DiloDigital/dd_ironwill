@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Coaching</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header id="header" role="presentation" class="header bg--white">
+    <div class="logo"><a href="#" class="logotipo">
+        <div class="isotipo"><img src="img/ironwill-isotipo.png" width="100" heigth="80" alt=""/></div>
+        <div class="slogan"><img src="img/ironwill-slogan.png" width="300" heigth="80" alt=""/></div></a>
+      <div id="menu" class="toggle-menu icon-menu"></div>
+    </div>
+    <nav id="navigation" role="navigation" class="main-nav">
+      <div class="menu-social">
+        <ul class="menu-social__list non-margin">
+          <li class="menu-social__item"><a href="#" class="menu-social__link icon-facebook"></a><a href="#" class="menu-social__link icon-twitter"> </a><a href="#" class="menu-social__link icon-instagram"></a></li>
+        </ul>
+      </div>
+      <div id="target" class="main-nav__cont">
+        <ul class="main-nav__list non-margin">
+          <li class="main-nav__item list-none"><a href="#servicios" class="main-nav__link">Servicios</a><a href="#servicios" class="main-nav__link">Blog</a><a href="#servicios" class="main-nav__link">RSE</a><a href="#contactanos" class="main-nav__link">Contáctenos</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main id="main"></main>
+  <section role="banner" class="banner box-min bg--grey-dark">
+    <div class="max-width">
+      <div class="header-banner text--center">
+        <h1 class="title--main">COACHING INTEGRATIVO</h1>
+        <p class="text--main text--white">Superación y el máximo desarrollo profesional y personal a través de una profunda transformación de perspectiva y aumento del compromiso todo con ayuda del trabajo en conjunto y charlas dinámicas.</p>
+      </div>
+      <div class="banner__cont">
+        <div class="banner__main">
+          <div class="video-banner"><a href="#"><img src="img/ironwill-video.jpg" alt="" class="img-responsive"/></a></div>
+        </div>
+        <div id="contactanos" class="banner__form bg--blue">
+          <form action="mailer.php" method="POST" id="ajax-contact" class="form">
+            <fieldset id="inputs">
+              <legend>Datos Personales </legend>
+              <div class="form__group">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" name="nombre" placeholder="Nombre completo" required="required" class="form__control"/>
+              </div>
+              <div class="form__group">
+                <label for="correo">Correo</label>
+                <input id="correo" type="correo" name="correo" placeholder="Correo electrónico" required="required" class="form__control"/>
+              </div>
+              <div class="form__group">
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" type="text" name="telefono" placeholder="Teléfono" required="required" class="form__control"/>
+              </div>
+              <div class="form__group">
+                <label mensaje="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required="required" class="form__control"></textarea>
+              </div>
+            </fieldset>
+            <div class="form__submit">
+              <button id="submit" class="btn-submit">contáctanos</button>
+            </div>
+            <div id="form-messages"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="valores bg--blue-sky box">
+    <div class="max-width">
+      <div class="valores__cont mob-tab-2">
+        <div class="valores__item">
+          <figure>
+            <div class="valores-img"><img src="img/productividad.png" alt="" class="img-responsive"/></div>
+            <figcaption>
+              <h4 class="title--sub4">Desempeño y productividad:</h4>
+              <p class="text--p4">A través del coaching se favorece a cada uno de los individuos, y en consecuencia a sus equipos para que se desempeñen de manera correcta y efectiva, algo que la capacitación tradicional no lo consigue.</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="valores__item">
+          <figure>
+            <div class="valores-img"><img src="img/motivacion.png" alt="" class="img-responsive"/></div>
+            <figcaption>
+              <h4 class="title--sub4">Mayor aprendizaje:</h4>
+              <p class="text--p4">El coaching favorece el aprendizaje y cataliza dicho proceso, sin perdidas de tiempo, ya que permite lograrlo sin dejar las tareas habituales ni el lugar de trabajo.</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="valores__item">
+          <figure>
+            <div class="valores-img"><img src="img/aprendizaje.png" alt="" class="img-responsive"/></div>
+            <figcaption>
+              <h4 class="title--sub4">Relación laboral:</h4>
+              <p class="text--p4">El empleo efectivo de técnicas de coaching para el desarrollo de su gente requiere de una mayor consciencia en las respuestas que dan a cada una de las circunstancias que se presentan en el ámbito laboral. Es por ello que nos enfocamos en el bienestar de las personas que quieren lograr sus objetivos.</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="valores__item">
+          <figure>
+            <div class="valores-img"><img src="img/crecimiento.png" alt="" class="img-responsive"/></div>
+            <figcaption>
+              <h4 class="title--sub4">Creatividad: </h4>
+              <p class="text--p4">A partir de ello se fomenta el aprendizaje y el descubrimiento de alternativas creativas para producir mayor efectividad en lo que cada quien se proponga. La actitud de aprendizaje y diálogo posibilita un entusiasmo creativo en lugar del miedo al ridículo, burla o a la descalificación.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <article id="servicios" class="servicio-coaching bg--white box">
+    <div class="max-width">
+      <div class="servicio-coaching__item text--center">
+        <div class="servicio-coaching__header">
+          <h2 class="title--sub2">¿Que hacemos?</h2>
+          <p class="text--p2">Ofrecemos un servicio a la medida de asesoramiento profesional independiente que ayuda a organizaciones a alcanzar los objetivos planeados mediante soluciones de problemas, el descubrimiento y evaluación de nuevas oportunidades, mejoría de aprendizaje y por último, la puesta en práctica en el campo.</p>
+        </div>
+        <div class="servicio-coaching__img"><img src="img/coaching-img.jpg" alt="" class="img-responsive"/></div>
+      </div>
+      <div class="servicios__button"><a href="#contactanos" class="btn-submit">Contáctanos</a></div>
+    </div>
+  </article>
+  <section class="banner-middle">
+    <div class="banner-middle__cont">
+      <div class="banner-middle__img-mob"><img src="img/banner-middle_mob.jpg" alt="" class="img-responsive"/></div>
+      <div class="banner-middle__img-pc"><img src="img/banner-middle_pc.jpg" alt="" class="img-responsive"/></div>
+      <div class="banner-middle__info">
+        <p class="text--center">El fracaso no es una opción. Todo el mundo tiene que triunfar.</p>
+      </div>
+    </div>
+  </section>
+  <section class="equipo bg--grey-dark box">
+    <div class="max-width">
+      <div class="equipo__header text--center">
+        <h2 class="title--sub2">El equipo a tu servicio</h2>
+      </div>
+      <div class="equipo__cont mob-2-pc-4 text--center">
+        <div class="equipo__item">
+          <figure><img src="img/hector_arriagada.jpg" alt="" class="img-responsive"/>
+            <figcaption>
+              <p class="text--p2">Hector Arriagada: Co-founder</p>
+              <p class="text--p2">Ingeniero Civil Industrial</p>
+              <p class="text--p2">hector@ironwill.work</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="equipo__item">
+          <figure><img src="img/sebastian_nunez.jpg" alt="" class="img-responsive"/>
+            <figcaption>
+              <p class="text--p2">Sebastian Nuñez: Co- founder</p>
+              <p class="text--p2">Kinesiólogo</p>
+              <p class="text--p2">sebastian@ironwill.work</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="equipo__item">
+          <figure><img src="img/javiera_munoz.jpg" alt="" class="img-responsive"/>
+            <figcaption>
+              <p class="text--p2">Javiera Muñoz: Community manager</p>
+              <p class="text--p2">Especialista en Marketing</p>
+              <p class="text--p2">javiera@ironwill.work</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="equipo__item">
+          <figure><img src="img/leslie_arriagada.jpg" alt="" class="img-responsive"/>
+            <figcaption>
+              <p class="text--p2">Leslie Arriagada</p>
+              <p class="text--p2">Asesora comercial</p>
+              <p class="text--p2">leslie@ironwill.work</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="clientes bg--white box">
+    <div class="max-width">
+      <div class="clientes__header text--center">
+        <h2 class="title--sub2">Ellos confían en nosotros</h2>
+      </div>
+      <div class="clientes__cont mob-2-vga-3-pc-5">
+        <div class="clientes__item"><a href="#"><img src="img/01_papamono.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/02_sak.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/03_aha.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/04_beyondenglish.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/05_conac.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/06_ninoycancer.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/07_flosinlimites.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/08_killcliff.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/09_accioncrossfit.jpg" alt="" class="img-responsive"/></a></div>
+        <div class="clientes__item"><a href="#"><img src="img/10_adapkine.jpg" alt="" class="img-responsive"/></a></div>
+      </div>
+      <p class="text--p2 text--center">No dudes en comunicarte. Te esperamos.</p>
+      <div class="clientes__button"><a href="#contactanos" class="btn-submit">Contáctanos</a></div>
+    </div>
+  </section>
+  <footer role="contentinfo" class="footer">
+    <div class="contacto bg--grey-medium">
+      <div class="contacto-logo"><img src="img/ironwill-isotipo.png" width="100" heigth="80" alt=""/></div>
+      <div class="menu-social">
+        <ul class="menu-social__list non-margin">
+          <li class="menu-social__item"><a href="#" class="menu-social__link icon-facebook"></a><a href="#" class="menu-social__link icon-twitter"> </a><a href="#" class="menu-social__link icon-instagram"></a></li>
+        </ul>
+        <div class="contacto-info">
+          <p class="correo">hola@ironwill.work</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-credits bg--grey-dark">
+      <div class="footer-credits__copyright">
+        <p class="text--p3 text--white">Todos los derechos reservados</p>
+      </div>
+      <div class="footer-credits__author"><a href="http://dilodigital.com" target="_blank">
+          <p class="text--p3 text--white">Diseñado por Dilodigital.com  </p></a></div>
+    </div>
+  </footer>
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
