@@ -191,9 +191,16 @@ body
 		+above(640px)
 			display none
 	
-	&__img-pc
+	&__img-tab
 		display none
 		+above(640px)
+			display block
+		+above(b3)
+			display none
+		
+	&__img-pc
+		display none
+		+above(b3)
 			display block
 		
 	&__info
@@ -208,8 +215,10 @@ body
 
 		p
 			font-family Abel
-			font-size 3.125em
+			font-size 2.8em
 			color white
+			+above(b2)
+				font-size 3.125em
 	
 .equipo
 	&__header
@@ -393,3 +402,5 @@ body
 			width 60%
 			//margin 5% auto
 				
+
+

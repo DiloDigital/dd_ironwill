@@ -4,7 +4,7 @@ head
     meta(charset="UTF-8")
     title Crecimiento Deportivo
     meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
-    link(rel="stylesheet", href="style.css")
+    link(rel="stylesheet", type="text/css", href="style.css")
 
 body
     include header.jade
@@ -17,7 +17,7 @@ body
             .banner__cont
                 .banner__main
                     .video-banner
-                        a(href="#")
+                        a(rel='shadowbox;width=405;height=340;', title='Ironwill', href='http://www.youtube.com/v/W5BPCpYousY&rel=0&autoplay=1')
                             img(src="img/ironwill-video.jpg", class="img-responsive", alt="")
                 include form.jade
 
@@ -27,28 +27,28 @@ body
                 .valores__item
                     figure
                         .valores-img
-                            img(src="img/productividad.png", class="img-responsive", alt="")
+                            img(src="img/crecimiento/bene01.svg", class="img-responsive", alt="")
                         figcaption
                             h4.title--sub4 Capacitación:
                             p.text--p4 Hoy en día es una herramienta imprescindible de cambio positivo en las personas y en las empresas; no es solamente un entrenamiento o instrucción, es en sí mismo un concepto de educación.
                 .valores__item
                     figure
                         .valores-img
-                            img(src="img/motivacion.png", class="img-responsive", alt="")
+                            img(src="img/crecimiento/bene02.svg", class="img-responsive", alt="")
                         figcaption
                             h4.title--sub4 Universalidad:
                             p.text--p4 Los entrenamientos están dirigidos para cualquier edad y son ideales para personas que quieran entrenar en grupo. Son recomendables para quienes buscan bajar de peso, perder grasa, fortalecerse y mejorar su resistencia ya que este tipo de movimientos se trabaja la coordinación, fuerza, resistencia y agilidad. 
                 .valores__item
                     figure
                         .valores-img
-                            img(src="img/aprendizaje.png", class="img-responsive", alt="")
+                            img(src="img/crecimiento/bene03.svg", class="img-responsive", alt="")
                         figcaption
                             h4.title--sub4 Superación:
                             p.text--p4 Ayuda a la formación de las personas que actúan directamente en la educación del ser humano y que contribuyen a elevar su nivel de conocimientos, capacidades y habilidades con las que se adquieren un conjunto de experiencias positivas reales.
                 .valores__item
                     figure
                         .valores-img
-                            img(src="img/crecimiento.png", class="img-responsive", alt="")
+                            img(src="img/crecimiento/bene04.svg", class="img-responsive", alt="")
                         figcaption
                             h4.title--sub4 Funcionalidad: 
                             p.text--p4 Mediante movimientos plenamente funcionales los entrenamientos se convierten en clases que incorporan en la vida cotidiana, por lo que te fortalecen y  preparan tu cuerpo para enfrentarse al día a día. Existen distintos tipos de ejercicios en el que cambian de nombre dependiendo de su complejidad, lo cual hace que tu cuerpo realice un entrenamiento completo.
@@ -60,16 +60,19 @@ body
                     h2.title--sub2 ¿Que hacemos?
                     p.text--p2 l propósito más importante de nuestra asesoría como consultores es intervenir de forma positiva a cada persona que así lo necesite, sin importar cualquier otro factor. Lo llevamos a cabo mediante un apoyo integral para quien así lo requiera, el objetivo en específico es lograr cumplir con todas las expectativas diseñadas previamente y así le permitan cambiar su actual punto de equilibrio a una percepción con mejor objetividad para alcanzar sus metas.
                 .servicio-crecimiento__img
-                    img(src="img/crecimiento-img.jpg", class="img-responsive", alt="")
+                    img(src="img/crecimiento/crecimiento-img.jpg", class="img-responsive", alt="")
             .servicios__button
                 a(href="#contactanos").btn-submit Contáctanos
     
     section.banner-middle
         .banner-middle__cont
             .banner-middle__img-mob
-                img(src="img/banner-middle_mob.jpg", class="img-responsive", alt="")
+                img(src="img/crecimiento/banner-middle_mob.jpg", class="img-responsive", alt="")
+            .banner-middle__img-tab
+                img(src="img/crecimiento/banner-middle_tab.jpg", class="img-responsive", alt="")
             .banner-middle__img-pc
-                img(src="img/banner-middle_pc.jpg", class="img-responsive", alt="")
+                img(src="img/crecimiento/banner-middle_pc.jpg", class="img-responsive", alt="")
+
             .banner-middle__info
                 p.text--center No puedes poner un límite a nada. Cuanto más sueñas, más lejos llegas.
 
@@ -79,3 +82,5 @@ body
 
     script(src='//code.jquery.com/jquery-1.12.0.min.js')
     script(src='js/main.js')
+    script(type='text/javascript').
+        Shadowbox.init();

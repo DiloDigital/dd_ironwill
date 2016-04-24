@@ -4,7 +4,7 @@ head
     meta(charset="UTF-8")
     title Charlas
     meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
-    link(rel="stylesheet", href="style.css")
+    link(rel="stylesheet", type="text/css", href="style.css")
 
 body
     include header.jade
@@ -17,7 +17,7 @@ body
             .banner__cont
                 .banner__main
                     .video-banner
-                        a(href="#")
+                        a(rel='shadowbox;width=405;height=340;', title='Ironwill', href='http://www.youtube.com/v/W5BPCpYousY&rel=0&autoplay=1')
                             img(src="img/ironwill-video.jpg", class="img-responsive", alt="")
                 include form.jade
 
@@ -27,28 +27,28 @@ body
                 .valores__item
                     figure
                         .valores-img
-                            img(src="img/productividad.png", class="img-responsive", alt="")
+                            img(src="img/charlas/bene01.svg", class="img-responsive", alt="")
                         figcaption
                             h4.title--sub4 Adaptabilidad:
                             p.text--p4 Empapados del espíritu de cambio y responsabilidad, te retamos a hacer lo mismo que has hecho hasta ahora, aunque no resulta una estrategia efectiva para mejorar. Cada vez es más evidente que la flexibilidad y la resiliencia constituyen factores de supervivencia en cualquier nivel ya sea personal o empresarial.
                 .valores__item
                     figure
                         .valores-img
-                            img(src="img/motivacion.png", class="img-responsive", alt="")
+                            img(src="img/charlas/bene02.svg", class="img-responsive", alt="")
                         figcaption
                             h4.title--sub4 Perder el miedo:
                             p.text--p4 Cumple todas tus metas al creer totalmente en tus capacidades físicas y mentales, deja de lado la zona de confort que no te deja crecer. El miedo es el peor enemigo del crecimiento por temer a lo desconocido. Muchas veces puede ser cómodo mantenernos la misma dinámica de vida porque ya lo dominas, pero no alcanzas tu máximo nivel de eficiencia. 
                 .valores__item
                     figure
                         .valores-img
-                            img(src="img/aprendizaje.png", class="img-responsive", alt="")
+                            img(src="img/charlas/bene03.svg", class="img-responsive", alt="")
                         figcaption
                             h4.title--sub4 Confianza:
                             p.text--p4 Creer en uno mismo es la principal herramienta para lograr grandes beneficios, ya sean personales o con terceros. Si tú crees que no podrás alcanzar tus metas porque no posees las capacidades para hacerlo, no lo lograrás. Claro que esto no se deberá a tus capacidades sino a tu confianza de llevar a cabo tus metas.
                 .valores__item
                     figure
                         .valores-img
-                            img(src="img/crecimiento.png", class="img-responsive", alt="")
+                            img(src="img/charlas/bene04.svg", class="img-responsive", alt="")
                         figcaption
                             h4.title--sub4 Mayor efectividad: 
                             p.text--p4 En una atmósfera en la cual las personas son valoradas por su capacidad de aprender, impera la iniciativa, y al encontrarse ante un imprevisto o una emergencia la gente toma acción y riesgos incluso antes de que les digan qué hacer.
@@ -60,16 +60,19 @@ body
                     h2.title--sub2 ¿Que hacemos?
                     p.text--p2 Mediante métodos adecuados de explotación llevamos a cabo el proceso minero el cual involucra diferentes etapas para desarrollar un proyecto minero, dentro de ellas se encuentran; la búsqueda y estimación de recursos, desarrollo de proyecto u obra, arranque, manejo de materiales y conclusión.
                 .servicio-charlas__img
-                    img(src="img/charlas-img.jpg", class="img-responsive", alt="")
+                    img(src="img/charlas/charlas-img.jpg", class="img-responsive", alt="")
             .servicios__button
                 a(href="#contactanos").btn-submit Contáctanos
     
     section.banner-middle
         .banner-middle__cont
             .banner-middle__img-mob
-                img(src="img/banner-middle_mob.jpg", class="img-responsive", alt="")
+                img(src="img/charlas/banner-middle_mob.jpg", class="img-responsive", alt="")
+            .banner-middle__img-tab
+                img(src="img/charlas/banner-middle_tab.jpg", class="img-responsive", alt="")
             .banner-middle__img-pc
-                img(src="img/banner-middle_pc.jpg", class="img-responsive", alt="")
+                img(src="img/charlas/banner-middle_pc.jpg", class="img-responsive", alt="")
+
             .banner-middle__info
                 p.text--center Ganar no lo es todo, pero sí lo es querer ganar.
     include equipo.jade
@@ -78,3 +81,5 @@ body
 
     script(src='//code.jquery.com/jquery-1.12.0.min.js')
     script(src='js/main.js')
+    script(type='text/javascript').
+        Shadowbox.init();
