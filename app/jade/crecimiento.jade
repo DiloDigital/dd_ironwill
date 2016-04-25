@@ -5,7 +5,12 @@ head
     title Crecimiento Deportivo
     meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
     link(rel="stylesheet", type="text/css", href="style.css")
+    link(href="favicon.ico", rel="shortcut icon", type="image/x-icon")
 
+    script(src='//code.jquery.com/jquery-1.12.0.min.js')
+    script(src='js/main.js')
+    script(type='text/javascript').
+        Shadowbox.init();
 body
     include header.jade
     main#main
@@ -53,12 +58,12 @@ body
                             h4.title--sub4 Funcionalidad: 
                             p.text--p4 Mediante movimientos plenamente funcionales los entrenamientos se convierten en clases que incorporan en la vida cotidiana, por lo que te fortalecen y  preparan tu cuerpo para enfrentarse al día a día. Existen distintos tipos de ejercicios en el que cambian de nombre dependiendo de su complejidad, lo cual hace que tu cuerpo realice un entrenamiento completo.
 
-    article.servicio-crecimiento.bg--white.box#servicios
+    article.servicio-crecimiento.bg--grey-medium.box#servicios
         div.max-width
             .servicio-crecimiento__item.text--center
                 .servicio-crecimiento__header
                     h2.title--sub2 ¿Que hacemos?
-                    p.text--p2 l propósito más importante de nuestra asesoría como consultores es intervenir de forma positiva a cada persona que así lo necesite, sin importar cualquier otro factor. Lo llevamos a cabo mediante un apoyo integral para quien así lo requiera, el objetivo en específico es lograr cumplir con todas las expectativas diseñadas previamente y así le permitan cambiar su actual punto de equilibrio a una percepción con mejor objetividad para alcanzar sus metas.
+                    p.text--p2 El propósito más importante de nuestra asesoría como consultores es intervenir de forma positiva a cada persona que así lo necesite, sin importar cualquier otro factor. Lo llevamos a cabo mediante un apoyo integral para quien así lo requiera, el objetivo en específico es lograr cumplir con todas las expectativas diseñadas previamente y así le permitan cambiar su actual punto de equilibrio a una percepción con mejor objetividad para alcanzar sus metas.
                 .servicio-crecimiento__img
                     img(src="img/crecimiento/crecimiento-img.jpg", class="img-responsive", alt="")
             .servicios__button
@@ -79,8 +84,3 @@ body
     include equipo.jade
     include clientes.jade
     include footer.jade
-
-    script(src='//code.jquery.com/jquery-1.12.0.min.js')
-    script(src='js/main.js')
-    script(type='text/javascript').
-        Shadowbox.init();
