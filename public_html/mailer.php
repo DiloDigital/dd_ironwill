@@ -20,22 +20,29 @@
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
         $recipient = "andres_ob@outlook.com";
-
-
+        
         // Set the email subject.
         $subject = "Formulario de contacto por : $name";
 
         // Build the email content.
         $email_content = "Nombre:  $name\n";
-        $email_content .= "Correo Electrónico:  $email\n";
-        $email_content .= "Teléfono: $telefono\n";
+        $email_content .= "Email:  $email\n";
+        $email_content .= "Fono: $telefono\n";
         $email_content .= "Mensaje: $message\n";
 
         // Build the email headers.
-        $email_headers = "De: $name <$email>";
+        $email_headers = "Reply-To: $name <$email>\r\n";
+	$email_headers = "Return-Path: $name <$email>\r\n";
+	$email_headers = "From: $name <$email>\r\n";
+
+	$email_headers .= "Organization: $name \r\n";
+	$email_headers .= "MIME-Version: 1.0\r\n";
+	$email_headers .= "Content-type: text/plain; charset=iso-8859-1\r\n";
+	$email_headers .= "X-Priority: 3\r\n";
+	$email_headers .= "X-Mailer: PHP". phpversion() ."\r\n" 
 
         // Send the email.
-        if (mail($recipient, $subject, $email_content, $email_headers)) {
+        if (mail("$recipient,$ccopy1,$ccopy2,$ccopy3,$ccopy4", $subject, $email_content, $email_headers)) {
             // Set a 200 (okay) response code.
             http_response_code(200);
             echo "¡Gracias! Tu mensaje ha sido enviado.";
