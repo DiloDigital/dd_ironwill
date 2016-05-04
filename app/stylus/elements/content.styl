@@ -1,10 +1,10 @@
-//edit()
+edit()
 
 body
 	margin 0 auto
 	padding 0
 	
-	font-family Abel, ANton, sans-serif
+	font-family Abel, Anton, sans-serif
 	font-size 16px
 	font-size 1rem
 	min-height 100vh
@@ -129,7 +129,8 @@ body
 		
 		figure
 			padding 0
-			margin 3em 0
+			margin-bottom 3em
+			//margin 3em 0
 			.valores-img
 				margin auto
 				width 120px
@@ -140,11 +141,11 @@ body
 				width 90%
 				h4
 					color grey
-			+above(b1)
+			+above(b2)
 				display flex
-				margin 0
+				margin 1em 0
 				figcaption
-					margin 0
+					//margin 0
 					text-align left
 					width 66%
 			+above(b2)
@@ -156,28 +157,41 @@ body
 					
 .servicios
 	&__header
+		margin-bottom 2em
 	&__cont
+		width 100%
 		
 	&__item
-		margin-bottom 1em
+		margin-bottom 2em
+		+above(b2)
+			width 32.9%
+			display inline-block
+		
 		figure
-			+above(640px)
-				margin 0
-				.servicio-img
-					width 100%
+			margin-bottom 3em
 			
+			+above(b1)
+				padding 0 5%
+				margin 0 auto
+				
 			.servicio-img
 				margin auto
-				margin-bottom 1em
-				+above(b1)
-					width 80%
+				width 280px
+				
+				+above(b2)
+					width 100%
+				
 				img
 					border-radius 50%
-					display block
 			figcaption
 				text-align center
 				a
 					text-decoration none
+					h3
+						+between(b2,b3)
+							width 80%
+							margin auto
+		
 	&__button
 		padding 1.5em 0
 		text-align center
@@ -224,14 +238,18 @@ body
 	&__header
 		margin-bottom 3em
 	&__cont
-		padding 0 3em
+		//padding 0 3em
 		+above(b3)
 			padding 0
-		
+		width 100%
 	&__item
 		color white
-		margin-bottom 1em
-		+above(b1)
+		margin-bottom 2em
+		+between(b1,640px)
+			width 48%
+			display inline-block
+			margin auto	
+		+above(640px)
 			
 			display flex
 			flex-direction row
@@ -240,6 +258,7 @@ body
 		figure
 			margin 0
 			background white
+			margin-bottom 1em
 			img
 				padding-top 1em
 			
@@ -253,12 +272,12 @@ body
 		display none
 		h2
 			color grey
-		+above(b1)
+		+above(b2)
 			display block
 
 	&__cont
 		display none
-		+above(b1)
+		+above(b2)
 			display flex
 		padding-bottom 2em
 	&__item
@@ -281,20 +300,20 @@ body
 		text-align center
 		p
 			color white
+		.contacto-logo
+			padding 1em
+		
+			
 		+above(b1)
 			display flex
 			justify-content space-between
 			padding 2.5em 2em
 			text-align left
-			.contacto-info
-				display flex
-				flex-direction column
-				p
-					color white
-					margin 0
-					font-size 1.1em
+			.contacto-logo
+				padding 0
 		.menu-social
 			&__list
+				
 			&__item
 				+above(b1)
 					display flex
@@ -304,21 +323,33 @@ body
 				font-size 1.5em
 				text-decoration none
 				color white
+			
+			.contacto-info
+				//display flex
+				//flex-direction column
+				p
+					color white
+					margin 0
+					font-size 1.1em
 				
 					
 	.footer-credits
 		padding 1em 2em 
-		display flex
-		justify-content space-between
-		color white
+		//color white
 		&__copyright
+			display inline-block
 		&__author
-			text-align center
+			float right
+			display inline-block
+			//text-align right
+				
 			a
 				text-decoration none
 				p
 					color yellow
-					
+		+above(b1)
+			display flex
+			justify-content space-between
 
 
 /*
