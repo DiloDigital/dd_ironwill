@@ -1,17 +1,24 @@
 main#main
-	section.banner(role="banner").box-min.bg--grey-dark
-		div.max-width
-			.header-banner.text--center
-				h1.title--main TU EQUIPO TIENE MUCHO MÁS QUE DAR 
-				p.text--main.text--white ¿Qué es IronWill? Es una consultora dedicada a entregar servicios de comunicación motivacional y de responsabilidad social que busca generar un impacto positivo en los públicos y en sus entornos.
-			.banner__cont
-				.banner__main
-					.video-banner
-						a(rel='shadowbox;width=560;height=315;', title='Ironwill', href='http://www.youtube.com/embed/W5BPCpYousY?rel=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0')
-							img(src="img/ironwill-video.jpg", class="img-responsive", alt="")
-				include form.jade
+	section.banner(role="banner")
+		div.max-width.box-min
+			.banner__cont.text--center
+				.header-banner
+					h1.title--main TU EQUIPO TIENE MUCHO MÁS QUE DAR 
+					p.text--main.text--white ¿Qué es IronWill? Es una consultora dedicada a entregar servicios de comunicación motivacional y de responsabilidad social que busca generar un impacto positivo en los públicos y en sus entornos.
+				.video-banner
+					a(rel='shadowbox;width=560;height=315;', title='Ironwill', href='http://www.youtube.com/embed/W5BPCpYousY?rel=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0')
+						img(src="img/play.png", width="100", alt="")
+					p.text--main.text--white Ver Video
+				.banner__button
+					a(href="#contactanos").btn-submit Contáctanos
+				.banner__dropdown
+					a(href="#valores")
+						img(src="img/down.png",width="40", alt="")
+					
+
+					
 	
-	section.valores.bg--blue-sky.box
+	section.valores.bg--blue-sky.box#valores
 		div.max-width
 			.valores__cont.mob-tab-2
 				.valores__item
