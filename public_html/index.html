@@ -29,8 +29,8 @@
     </nav>
   </header>
   <main id="main">
-    <section role="banner" class="banner">
-      <div class="max-width box-min">
+    <section role="banner" class="banner bg--grey-dark">
+      <div class="max-width--extra box min">
         <div class="banner__cont text--center">
           <div class="header-banner">
             <h1 class="title--main">TU EQUIPO TIENE MUCHO MÁS QUE DAR </h1>
@@ -196,51 +196,55 @@
     </div>
   </section>
   <footer role="contentinfo" class="footer">
-    <div class="formulario">
-      <div id="contactanos" class="banner__form bg--blue">
+    <div id="contactanos" class="contact bg--grey-medium text--center">
+      <div class="contacto__header">
+        <h4 class="title--sub4">Ponte en contacto ya mismo.¡Te esperamos!</h4>
+      </div>
+      <div class="contact__subtitle left">
+        <p class="text--p4 text--white">Solo escríbenos y cuéntanos sobre tus inquietudes y nos comunicaremos lo más pronto posible contigo</p>
+      </div>
+      <div class="contact__form right">
         <form action="mailer.php" method="POST" id="ajax-contact" class="form">
           <fieldset id="inputs">
             <legend>Datos Personales </legend>
             <div class="form__group">
               <label for="nombre">Nombre</label>
-              <input id="nombre" type="text" name="nombre" placeholder="Nombre completo" required="required" class="form__control"/>
+              <input id="nombre" type="text" name="nombre" placeholder="Tu nombre" required="required" class="form__control"/>
             </div>
             <div class="form__group">
               <label for="correo">Correo</label>
-              <input id="correo" type="correo" name="correo" placeholder="Correo electrónico" required="required" class="form__control"/>
+              <input id="correo" type="correo" name="correo" placeholder="Tu correo" required="required" class="form__control"/>
             </div>
             <div class="form__group">
               <label for="telefono">Teléfono</label>
-              <input id="telefono" type="text" name="telefono" placeholder="Teléfono" required="required" class="form__control"/>
+              <input id="telefono" type="text" name="telefono" placeholder="Tu teléfono" required="required" class="form__control"/>
             </div>
             <div class="form__group">
               <label mensaje="mensaje">Mensaje</label>
-              <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required="required" class="form__control"></textarea>
+              <textarea id="mensaje" name="Cuéntanos" placeholder="Tu mensaje" required="required" class="form__control"></textarea>
             </div>
           </fieldset>
           <div class="form__submit">
-            <button id="submit" class="btn-submit">contáctanos</button>
+            <button id="submit" class="btn-submit">Enviar Mensaje</button>
           </div>
           <div id="form-messages"></div>
         </form>
       </div>
-    </div>
-    <div class="contacto bg--grey-medium">
-      <div class="contacto-logo"><a href="http://ironwill.work" title="Ironwill"><img src="img/ironwill-isotipo.png" width="100" heigth="80" alt=""/></a></div>
-      <div class="menu-social">
+      <div class="menu-social left">
         <ul class="menu-social__list non-margin">
           <li class="menu-social__item"><a href="https://www.facebook.com/ironwillchile/" target="_blank" class="menu-social__link icon-facebook"></a><a href="https://www.instagram.com/ironwillchile/" target="_blank" class="menu-social__link icon-instagram"></a></li>
         </ul>
-        <div class="contacto-info">
-          <p class="correo">hola@ironwill.work</p>
-        </div>
+      </div>
+      <div class="contact__info left">
+        <p>Ventas: <span>954 39893 43</span></p>
+        <p>Mail: <span>hola@ironwill.work</span></p>
       </div>
     </div>
-    <div class="footer-credits bg--grey-dark">
-      <div class="footer-credits__copyright">
+    <div class="credits bg--grey-dark">
+      <div class="credits__copyright">
         <p class="text--p3 text--white">Todos los derechos reservados</p>
       </div>
-      <div class="footer-credits__author"><a href="http://dilodigital.com" target="_blank">
+      <div class="credits__author"><a href="http://dilodigital.com" target="_blank">
           <p class="text--p3 text--white">Diseñado por Dilodigital.com</p></a></div>
     </div>
   </footer>

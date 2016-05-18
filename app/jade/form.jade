@@ -1,19 +1,18 @@
-.banner__form.bg--blue#contactanos
-    form(action="mailer.php", method="POST", id="ajax-contact", class="form")
-        fieldset#inputs
-            legend Datos Personales 
-            .form__group
-                label(for="nombre") Nombre
-                input#nombre(type="text", name="nombre", class="form__control", placeholder="Nombre completo", required)
-            .form__group
-                label(for="correo") Correo
-                input#correo(type="correo", name="correo", class="form__control", placeholder="Correo electrónico", required)
-            .form__group
-                label(for="telefono") Teléfono
-                input#telefono(type="text", name="telefono", class="form__control", placeholder="Teléfono", required)
-            .form__group
-                label(mensaje) Mensaje
-                textarea#mensaje(name="mensaje", class="form__control", placeholder="Tu mensaje", required)
-        .form__submit
-                button#submit.btn-submit contáctanos
-        #form-messages
+form(action="mailer.php", method="POST", id="ajax-contact", class="form")
+    fieldset#inputs
+        legend Datos Personales 
+        .form__group
+            label(for="nombre") Nombre
+            input#nombre(type="text", name="nombre", class="form__control", placeholder="Tu nombre", required)
+        .form__group
+            label(for="correo") Correo
+            input#correo(type="correo", name="correo", class="form__control", placeholder="Tu correo", required)
+        .form__group
+            label(for="telefono") Teléfono
+            input#telefono(type="text", name="telefono", class="form__control", placeholder="Tu teléfono", required)
+        .form__group
+            label(mensaje) Mensaje
+            textarea#mensaje(name="Cuéntanos", class="form__control", placeholder="Tu mensaje", required)
+    .form__submit
+            button#submit.btn-submit Enviar Mensaje
+    #form-messages
