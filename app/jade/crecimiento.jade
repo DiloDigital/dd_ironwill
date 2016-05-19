@@ -7,77 +7,80 @@ head
     link(rel="stylesheet", type="text/css", href="style.css")
     link(href="favicon.ico", rel="shortcut icon", type="image/x-icon")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Abel", type="text/css")
-    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Anton", type="text/css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Fjalla+One", type="text/css")
 
 body
     include header.jade
     main#main
-    section.banner(role="banner").box-min.bg--grey-dark
-        div.max-width
-            .header-banner.text--center
-                h1.title--main CRECIMIENTO DEPORTIVO 
-                p.text--main.text--white Se promueven y difunden los valores deportivos entre las personas que quieran desarrollarse en los conocimientos del área deportiva, con los cuales se genera un buen crecimiento en el proceso de enseñanza y aprendizaje.
-            .banner__cont
-                .banner__main
+        section.banner(role="banner").bg--grey-dark
+            div.max-width--extra.box.min
+                .banner__cont.text--center
+                    .header-banner
+                        h1.title--main CRECIMIENTO DEPORTIVO 
+                        p.text--main.text--white Se promueven y difunden los valores deportivos entre las personas que quieran desarrollarse en los conocimientos del área deportiva, con los cuales se genera un buen crecimiento en el proceso de enseñanza y aprendizaje.
                     .video-banner
-                        a(rel='shadowbox;width=405;height=340;', title='Ironwill', href='http://www.youtube.com/v/W5BPCpYousY&rel=0&autoplay=1')
-                            img(src="img/ironwill-video.jpg", class="img-responsive", alt="")
-                include form.jade
+                        a(rel='shadowbox;width=560;height=315;', title='Ironwill', href='http://www.youtube.com/embed/W5BPCpYousY?rel=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0')
+                            img(src="img/play.png", width="100", alt="")
+                        p.text--main.text--white Ver Video
+                    .banner__button
+                        a(href="#contactanos").btn-submit Contáctanos
+                    .banner__dropdown
+                        a(href="#valores")
+                            img(src="img/down.png",width="40", alt="")
+        section.valores.bg--blue-sky.box#valores
+            div.max-width
+                .valores__cont.mob-tab-2
+                    .valores__item
+                        figure
+                            .valores-img
+                                img(src="img/crecimiento/bene01.svg", class="img-responsive", alt="")
+                            figcaption
+                                h4.title--sub4 Capacitación:
+                                p.text--p4 Hoy en día es una herramienta imprescindible de cambio positivo en las personas y en las empresas; no es solamente un entrenamiento o instrucción, es en sí mismo un concepto de educación.
+                    .valores__item
+                        figure
+                            .valores-img
+                                img(src="img/crecimiento/bene02.svg", class="img-responsive", alt="")
+                            figcaption
+                                h4.title--sub4 Red de Profesionales:
+                                p.text--p4 Contamos con una amplia de red de contactos compuesta por deportistas y profesionales expertos. 
+                    .valores__item
+                        figure
+                            .valores-img
+                                img(src="img/crecimiento/bene03.svg", class="img-responsive", alt="")
+                            figcaption
+                                h4.title--sub4 Superación:
+                                p.text--p4 Ayuda a la formación de las personas que actúan directamente en la educación del ser humano y que contribuyen a elevar su nivel de conocimientos, capacidades y habilidades con las que se adquieren un conjunto de experiencias positivas reales.
+                    .valores__item
+                        figure
+                            .valores-img
+                                img(src="img/crecimiento/bene04.svg", class="img-responsive", alt="")
+                            figcaption
+                                h4.title--sub4 Se más: 
+                                p.text--p4 Sabemos que puedes lograr mucho más es por ello que puedes contar con nosotros para llegar al siguiente nivel con ayuda de nuestra pertinente asesoría y capacitación.
 
-    section.valores.bg--blue-sky.box
-        div.max-width
-            .valores__cont.mob-tab-2
-                .valores__item
-                    figure
-                        .valores-img
-                            img(src="img/crecimiento/bene01.svg", class="img-responsive", alt="")
-                        figcaption
-                            h4.title--sub4 Capacitación:
-                            p.text--p4 Hoy en día es una herramienta imprescindible de cambio positivo en las personas y en las empresas; no es solamente un entrenamiento o instrucción, es en sí mismo un concepto de educación.
-                .valores__item
-                    figure
-                        .valores-img
-                            img(src="img/crecimiento/bene02.svg", class="img-responsive", alt="")
-                        figcaption
-                            h4.title--sub4 Red de Profesionales:
-                            p.text--p4 Contamos con una amplia de red de contactos compuesta por deportistas y profesionales expertos. 
-                .valores__item
-                    figure
-                        .valores-img
-                            img(src="img/crecimiento/bene03.svg", class="img-responsive", alt="")
-                        figcaption
-                            h4.title--sub4 Superación:
-                            p.text--p4 Ayuda a la formación de las personas que actúan directamente en la educación del ser humano y que contribuyen a elevar su nivel de conocimientos, capacidades y habilidades con las que se adquieren un conjunto de experiencias positivas reales.
-                .valores__item
-                    figure
-                        .valores-img
-                            img(src="img/crecimiento/bene04.svg", class="img-responsive", alt="")
-                        figcaption
-                            h4.title--sub4 Se más: 
-                            p.text--p4 Sabemos que puedes lograr mucho más es por ello que puedes contar con nosotros para llegar al siguiente nivel con ayuda de nuestra pertinente asesoría y capacitación.
+        article.servicio-crecimiento.bg--grey-medium.box#servicios
+            div.max-width
+                .servicio-crecimiento__item.text--center
+                    .servicio-crecimiento__header
+                        h2.title--sub2 ¿Que hacemos?
+                        p.text--p2 Nuestra amplia experiencia como atletas destacados nos permite poner a tu servicio la formación, rigor y beneficios que hemos adquirido por llevar una vida ligada al deporte. Además, contamos con una amplia red de especialistas que acercamos a ti y a tu equipo para ayudarlos a llegar al siguiente nivel.
+                    .servicio-crecimiento__img
+                        img(src="img/crecimiento/crecimiento-img.jpg", class="img-responsive", alt="")
+                .servicios__button
+                    a(href="#contactanos").btn-submit Contáctanos
+        
+        section.banner-middle
+            .banner-middle__cont
+                .banner-middle__img-mob
+                    img(src="img/crecimiento/banner-middle_mob.jpg", class="img-responsive", alt="")
+                .banner-middle__img-tab
+                    img(src="img/crecimiento/banner-middle_tab.jpg", class="img-responsive", alt="")
+                .banner-middle__img-pc
+                    img(src="img/crecimiento/banner-middle_pc.jpg", class="img-responsive", alt="")
 
-    article.servicio-crecimiento.bg--grey-medium.box#servicios
-        div.max-width
-            .servicio-crecimiento__item.text--center
-                .servicio-crecimiento__header
-                    h2.title--sub2 ¿Que hacemos?
-                    p.text--p2 Nuestra amplia experiencia como atletas destacados nos permite poner a tu servicio la formación, rigor y beneficios que hemos adquirido por llevar una vida ligada al deporte. Además, contamos con una amplia red de especialistas que acercamos a ti y a tu equipo para ayudarlos a llegar al siguiente nivel.
-                .servicio-crecimiento__img
-                    img(src="img/crecimiento/crecimiento-img.jpg", class="img-responsive", alt="")
-            .servicios__button
-                a(href="#contactanos").btn-submit Contáctanos
-    
-    section.banner-middle
-        .banner-middle__cont
-            .banner-middle__img-mob
-                img(src="img/crecimiento/banner-middle_mob.jpg", class="img-responsive", alt="")
-            .banner-middle__img-tab
-                img(src="img/crecimiento/banner-middle_tab.jpg", class="img-responsive", alt="")
-            .banner-middle__img-pc
-                img(src="img/crecimiento/banner-middle_pc.jpg", class="img-responsive", alt="")
-
-            .banner-middle__info
-                p.text--center Si buscas resultados distintos no hagas siempre lo mismo.
+                .banner-middle__info
+                    p.text--center Si buscas resultados distintos no hagas siempre lo mismo.
 
     include equipo.jade
     include clientes.jade

@@ -1,26 +1,29 @@
-footer(role="contentinfo").footer
-	.contact.bg--grey-medium.text--center#contactanos
+footer(role="contentinfo").footer.bg--grey-medium
+	.contact.text--center.box#contactanos
 		.contacto__header
-			h4.title--sub4 Ponte en contacto ya mismo.¡Te esperamos!
-
-
-		.contact__subtitle.left
+			h2.title--sub2 Ponte en contacto ya mismo. ¡Te esperamos!
+		.contact__subtitle1
 			p.text--p4.text--white Solo escríbenos y cuéntanos sobre tus inquietudes y nos comunicaremos lo más pronto posible contigo
-		
-		.contact__form.right
-			include form.jade
-			
-		.menu-social.left
-			ul.menu-social__list.non-margin
-				li.menu-social__item
-					a(href="https://www.facebook.com/ironwillchile/", target="_blank").menu-social__link.icon-facebook
-					a(href="https://www.instagram.com/ironwillchile/", target="_blank").menu-social__link.icon-instagram
 
-		.contact__info.left
-			p Ventas: 
-				span 954 39893 43
-			p Mail: 
-				span hola@ironwill.work
+		.contact-right
+			.contact__form
+				include form.jade
+		
+		.contact-left
+			.contact__subtitle2
+				p.text--main.text--white Solo escríbenos y cuéntanos sobre tus inquietudes y nos comunicaremos lo más pronto posible contigo
+			
+			.contact__info
+				p Ventas: 
+					span 954 39893 43
+				p Mail: 
+					span hola@ironwill.work
+			
+			.menu-social
+				ul.menu-social__list.non-margin.list-none
+					li.menu-social__item
+						a(href="https://www.facebook.com/ironwillchile/", target="_blank").menu-social__link.icon-facebook
+						a(href="https://www.instagram.com/ironwillchile/", target="_blank").menu-social__link.icon-instagram
 
 	.credits.bg--grey-dark
 		.credits__copyright

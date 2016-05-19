@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="style.css"/>
   <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel" type="text/css"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton" type="text/css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One" type="text/css"/>
 </head>
 <body>
   <header id="header" role="presentation" class="header bg--white">
@@ -23,114 +23,92 @@
       </div>
       <div id="target" class="main-nav__cont">
         <ul class="main-nav__list non-margin">
-          <li class="main-nav__item list-none"><a href="http://ironwill.work/#servicios" class="main-nav__link">Servicios</a><a href="#contactanos" class="main-nav__link">Contáctenos</a></li>
+          <li class="main-nav__item list-none"><a href="http://ironwill.work/#servicios" class="main-nav__link">Servicios</a><a href="http://ironwill.work/rse.html" class="main-nav__link">RSE</a><a href="#contactanos" class="main-nav__link">Contáctenos</a></li>
         </ul>
       </div>
     </nav>
   </header>
-  <main id="main"></main>
-  <section role="banner" class="banner box-min bg--grey-dark">
-    <div class="max-width">
-      <div class="header-banner text--center">
-        <h1 class="title--main">CRECIMIENTO DEPORTIVO </h1>
-        <p class="text--main text--white">Se promueven y difunden los valores deportivos entre las personas que quieran desarrollarse en los conocimientos del área deportiva, con los cuales se genera un buen crecimiento en el proceso de enseñanza y aprendizaje.</p>
-      </div>
-      <div class="banner__cont">
-        <div class="banner__main">
-          <div class="video-banner"><a rel="shadowbox;width=405;height=340;" title="Ironwill" href="http://www.youtube.com/v/W5BPCpYousY&amp;rel=0&amp;autoplay=1"><img src="img/ironwill-video.jpg" alt="" class="img-responsive"/></a></div>
-        </div>
-        <form action="mailer.php" method="POST" id="ajax-contact" class="form">
-          <fieldset id="inputs">
-            <legend>Datos Personales </legend>
-            <div class="form__group">
-              <label for="nombre">Nombre</label>
-              <input id="nombre" type="text" name="nombre" placeholder="Tu nombre" required="required" class="form__control"/>
-            </div>
-            <div class="form__group">
-              <label for="correo">Correo</label>
-              <input id="correo" type="correo" name="correo" placeholder="Tu correo" required="required" class="form__control"/>
-            </div>
-            <div class="form__group">
-              <label for="telefono">Teléfono</label>
-              <input id="telefono" type="text" name="telefono" placeholder="Tu teléfono" required="required" class="form__control"/>
-            </div>
-            <div class="form__group">
-              <label mensaje="mensaje">Mensaje</label>
-              <textarea id="mensaje" name="Cuéntanos" placeholder="Tu mensaje" required="required" class="form__control"></textarea>
-            </div>
-          </fieldset>
-          <div class="form__submit">
-            <button id="submit" class="btn-submit">Enviar Mensaje</button>
+  <main id="main">
+    <section role="banner" class="banner bg--grey-dark">
+      <div class="max-width--extra box min">
+        <div class="banner__cont text--center">
+          <div class="header-banner">
+            <h1 class="title--main">CRECIMIENTO DEPORTIVO </h1>
+            <p class="text--main text--white">Se promueven y difunden los valores deportivos entre las personas que quieran desarrollarse en los conocimientos del área deportiva, con los cuales se genera un buen crecimiento en el proceso de enseñanza y aprendizaje.</p>
           </div>
-          <div id="form-messages"></div>
-        </form>
-      </div>
-    </div>
-  </section>
-  <section class="valores bg--blue-sky box">
-    <div class="max-width">
-      <div class="valores__cont mob-tab-2">
-        <div class="valores__item">
-          <figure>
-            <div class="valores-img"><img src="img/crecimiento/bene01.svg" alt="" class="img-responsive"/></div>
-            <figcaption>
-              <h4 class="title--sub4">Capacitación:</h4>
-              <p class="text--p4">Hoy en día es una herramienta imprescindible de cambio positivo en las personas y en las empresas; no es solamente un entrenamiento o instrucción, es en sí mismo un concepto de educación.</p>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="valores__item">
-          <figure>
-            <div class="valores-img"><img src="img/crecimiento/bene02.svg" alt="" class="img-responsive"/></div>
-            <figcaption>
-              <h4 class="title--sub4">Red de Profesionales:</h4>
-              <p class="text--p4">Contamos con una amplia de red de contactos compuesta por deportistas y profesionales expertos. </p>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="valores__item">
-          <figure>
-            <div class="valores-img"><img src="img/crecimiento/bene03.svg" alt="" class="img-responsive"/></div>
-            <figcaption>
-              <h4 class="title--sub4">Superación:</h4>
-              <p class="text--p4">Ayuda a la formación de las personas que actúan directamente en la educación del ser humano y que contribuyen a elevar su nivel de conocimientos, capacidades y habilidades con las que se adquieren un conjunto de experiencias positivas reales.</p>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="valores__item">
-          <figure>
-            <div class="valores-img"><img src="img/crecimiento/bene04.svg" alt="" class="img-responsive"/></div>
-            <figcaption>
-              <h4 class="title--sub4">Se más: </h4>
-              <p class="text--p4">Sabemos que puedes lograr mucho más es por ello que puedes contar con nosotros para llegar al siguiente nivel con ayuda de nuestra pertinente asesoría y capacitación.</p>
-            </figcaption>
-          </figure>
+          <div class="video-banner"><a rel="shadowbox;width=560;height=315;" title="Ironwill" href="http://www.youtube.com/embed/W5BPCpYousY?rel=0&amp;amp;autoplay=1&amp;amp;controls=0&amp;amp;showinfo=0"><img src="img/play.png" width="100" alt=""/></a>
+            <p class="text--main text--white">Ver Video</p>
+          </div>
+          <div class="banner__button"><a href="#contactanos" class="btn-submit">Contáctanos</a></div>
+          <div class="banner__dropdown"><a href="#valores"><img src="img/down.png" width="40" alt=""/></a></div>
         </div>
       </div>
-    </div>
-  </section>
-  <article id="servicios" class="servicio-crecimiento bg--grey-medium box">
-    <div class="max-width">
-      <div class="servicio-crecimiento__item text--center">
-        <div class="servicio-crecimiento__header">
-          <h2 class="title--sub2">¿Que hacemos?</h2>
-          <p class="text--p2">Nuestra amplia experiencia como atletas destacados nos permite poner a tu servicio la formación, rigor y beneficios que hemos adquirido por llevar una vida ligada al deporte. Además, contamos con una amplia red de especialistas que acercamos a ti y a tu equipo para ayudarlos a llegar al siguiente nivel.</p>
+    </section>
+    <section id="valores" class="valores bg--blue-sky box">
+      <div class="max-width">
+        <div class="valores__cont mob-tab-2">
+          <div class="valores__item">
+            <figure>
+              <div class="valores-img"><img src="img/crecimiento/bene01.svg" alt="" class="img-responsive"/></div>
+              <figcaption>
+                <h4 class="title--sub4">Capacitación:</h4>
+                <p class="text--p4">Hoy en día es una herramienta imprescindible de cambio positivo en las personas y en las empresas; no es solamente un entrenamiento o instrucción, es en sí mismo un concepto de educación.</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="valores__item">
+            <figure>
+              <div class="valores-img"><img src="img/crecimiento/bene02.svg" alt="" class="img-responsive"/></div>
+              <figcaption>
+                <h4 class="title--sub4">Red de Profesionales:</h4>
+                <p class="text--p4">Contamos con una amplia de red de contactos compuesta por deportistas y profesionales expertos. </p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="valores__item">
+            <figure>
+              <div class="valores-img"><img src="img/crecimiento/bene03.svg" alt="" class="img-responsive"/></div>
+              <figcaption>
+                <h4 class="title--sub4">Superación:</h4>
+                <p class="text--p4">Ayuda a la formación de las personas que actúan directamente en la educación del ser humano y que contribuyen a elevar su nivel de conocimientos, capacidades y habilidades con las que se adquieren un conjunto de experiencias positivas reales.</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="valores__item">
+            <figure>
+              <div class="valores-img"><img src="img/crecimiento/bene04.svg" alt="" class="img-responsive"/></div>
+              <figcaption>
+                <h4 class="title--sub4">Se más: </h4>
+                <p class="text--p4">Sabemos que puedes lograr mucho más es por ello que puedes contar con nosotros para llegar al siguiente nivel con ayuda de nuestra pertinente asesoría y capacitación.</p>
+              </figcaption>
+            </figure>
+          </div>
         </div>
-        <div class="servicio-crecimiento__img"><img src="img/crecimiento/crecimiento-img.jpg" alt="" class="img-responsive"/></div>
       </div>
-      <div class="servicios__button"><a href="#contactanos" class="btn-submit">Contáctanos</a></div>
-    </div>
-  </article>
-  <section class="banner-middle">
-    <div class="banner-middle__cont">
-      <div class="banner-middle__img-mob"><img src="img/crecimiento/banner-middle_mob.jpg" alt="" class="img-responsive"/></div>
-      <div class="banner-middle__img-tab"><img src="img/crecimiento/banner-middle_tab.jpg" alt="" class="img-responsive"/></div>
-      <div class="banner-middle__img-pc"><img src="img/crecimiento/banner-middle_pc.jpg" alt="" class="img-responsive"/></div>
-      <div class="banner-middle__info">
-        <p class="text--center">Si buscas resultados distintos no hagas siempre lo mismo.</p>
+    </section>
+    <article id="servicios" class="servicio-crecimiento bg--grey-medium box">
+      <div class="max-width">
+        <div class="servicio-crecimiento__item text--center">
+          <div class="servicio-crecimiento__header">
+            <h2 class="title--sub2">¿Que hacemos?</h2>
+            <p class="text--p2">Nuestra amplia experiencia como atletas destacados nos permite poner a tu servicio la formación, rigor y beneficios que hemos adquirido por llevar una vida ligada al deporte. Además, contamos con una amplia red de especialistas que acercamos a ti y a tu equipo para ayudarlos a llegar al siguiente nivel.</p>
+          </div>
+          <div class="servicio-crecimiento__img"><img src="img/crecimiento/crecimiento-img.jpg" alt="" class="img-responsive"/></div>
+        </div>
+        <div class="servicios__button"><a href="#contactanos" class="btn-submit">Contáctanos</a></div>
       </div>
-    </div>
-  </section>
+    </article>
+    <section class="banner-middle">
+      <div class="banner-middle__cont">
+        <div class="banner-middle__img-mob"><img src="img/crecimiento/banner-middle_mob.jpg" alt="" class="img-responsive"/></div>
+        <div class="banner-middle__img-tab"><img src="img/crecimiento/banner-middle_tab.jpg" alt="" class="img-responsive"/></div>
+        <div class="banner-middle__img-pc"><img src="img/crecimiento/banner-middle_pc.jpg" alt="" class="img-responsive"/></div>
+        <div class="banner-middle__info">
+          <p class="text--center">Si buscas resultados distintos no hagas siempre lo mismo.</p>
+        </div>
+      </div>
+    </section>
+  </main>
   <section class="equipo bg--grey-dark box">
     <div class="max-width">
       <div class="equipo__header text--center">
@@ -198,49 +176,56 @@
       <div class="clientes__button"><a href="#contactanos" class="btn-submit">Contáctanos</a></div>
     </div>
   </section>
-  <footer role="contentinfo" class="footer">
-    <div id="contactanos" class="contact bg--grey-medium text--center">
+  <footer role="contentinfo" class="footer bg--grey-medium">
+    <div id="contactanos" class="contact text--center box">
       <div class="contacto__header">
-        <h4 class="title--sub4">Ponte en contacto ya mismo.¡Te esperamos!</h4>
+        <h2 class="title--sub2">Ponte en contacto ya mismo. ¡Te esperamos!</h2>
       </div>
-      <div class="contact__subtitle left">
+      <div class="contact__subtitle1">
         <p class="text--p4 text--white">Solo escríbenos y cuéntanos sobre tus inquietudes y nos comunicaremos lo más pronto posible contigo</p>
       </div>
-      <div class="contact__form right">
-        <form action="mailer.php" method="POST" id="ajax-contact" class="form">
-          <fieldset id="inputs">
-            <legend>Datos Personales </legend>
-            <div class="form__group">
-              <label for="nombre">Nombre</label>
-              <input id="nombre" type="text" name="nombre" placeholder="Tu nombre" required="required" class="form__control"/>
+      <div class="contact-right">
+        <div class="contact__form">
+          <form action="mailer.php" method="POST" id="ajax-contact" class="form">
+            <fieldset id="inputs">
+              <legend>Datos Personales </legend>
+              <div class="form__group">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" name="nombre" placeholder="Tu nombre" required="required" class="form__control"/>
+              </div>
+              <div class="form__group">
+                <label for="correo">Correo</label>
+                <input id="correo" type="correo" name="correo" placeholder="Tu correo" required="required" class="form__control"/>
+              </div>
+              <div class="form__group">
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" type="text" name="telefono" placeholder="Tu teléfono" required="required" class="form__control"/>
+              </div>
+              <div class="form__group">
+                <label mensaje="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="Cuéntanos" placeholder="Tu mensaje" required="required" class="form__control"></textarea>
+              </div>
+            </fieldset>
+            <div class="form__submit">
+              <button id="submit" class="btn-submit">Enviar Mensaje</button>
             </div>
-            <div class="form__group">
-              <label for="correo">Correo</label>
-              <input id="correo" type="correo" name="correo" placeholder="Tu correo" required="required" class="form__control"/>
-            </div>
-            <div class="form__group">
-              <label for="telefono">Teléfono</label>
-              <input id="telefono" type="text" name="telefono" placeholder="Tu teléfono" required="required" class="form__control"/>
-            </div>
-            <div class="form__group">
-              <label mensaje="mensaje">Mensaje</label>
-              <textarea id="mensaje" name="Cuéntanos" placeholder="Tu mensaje" required="required" class="form__control"></textarea>
-            </div>
-          </fieldset>
-          <div class="form__submit">
-            <button id="submit" class="btn-submit">Enviar Mensaje</button>
-          </div>
-          <div id="form-messages"></div>
-        </form>
+            <div id="form-messages"></div>
+          </form>
+        </div>
       </div>
-      <div class="menu-social left">
-        <ul class="menu-social__list non-margin">
-          <li class="menu-social__item"><a href="https://www.facebook.com/ironwillchile/" target="_blank" class="menu-social__link icon-facebook"></a><a href="https://www.instagram.com/ironwillchile/" target="_blank" class="menu-social__link icon-instagram"></a></li>
-        </ul>
-      </div>
-      <div class="contact__info left">
-        <p>Ventas: <span>954 39893 43</span></p>
-        <p>Mail: <span>hola@ironwill.work</span></p>
+      <div class="contact-left">
+        <div class="contact__subtitle2">
+          <p class="text--main text--white">Solo escríbenos y cuéntanos sobre tus inquietudes y nos comunicaremos lo más pronto posible contigo</p>
+        </div>
+        <div class="contact__info">
+          <p>Ventas: <span>954 39893 43</span></p>
+          <p>Mail: <span>hola@ironwill.work</span></p>
+        </div>
+        <div class="menu-social">
+          <ul class="menu-social__list non-margin list-none">
+            <li class="menu-social__item"><a href="https://www.facebook.com/ironwillchile/" target="_blank" class="menu-social__link icon-facebook"></a><a href="https://www.instagram.com/ironwillchile/" target="_blank" class="menu-social__link icon-instagram"></a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="credits bg--grey-dark">

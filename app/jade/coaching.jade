@@ -7,76 +7,79 @@ head
     link(rel="stylesheet", type="text/css", href="style.css")
     link(href="favicon.ico", rel="shortcut icon", type="image/x-icon")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Abel", type="text/css")
-    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Anton", type="text/css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Fjalla+One", type="text/css")
 
 body
     include header.jade
     main#main
-    section.banner(role="banner").box-min.bg--grey-dark
-        div.max-width
-            .header-banner.text--center
-                h1.title--main COACHING INTEGRATIVO
-                p.text--main.text--white Superación y el máximo desarrollo profesional y personal a través de una profunda transformación de perspectiva y aumento del compromiso todo con ayuda del trabajo en conjunto y charlas dinámicas.
-            .banner__cont
-                .banner__main
+        section.banner(role="banner").bg--grey-dark
+            div.max-width--extra.box.min
+                .banner__cont.text--center
+                    .header-banner
+                        h1.title--main COACHING INTEGRATIVO 
+                        p.text--main.text--white Superación y el máximo desarrollo profesional y personal a través de una profunda transformación de perspectiva y aumento del compromiso todo con ayuda del trabajo en conjunto y charlas dinámicas.
                     .video-banner
-                        a(rel='shadowbox;width=405;height=340;', title='Ironwill', href='http://www.youtube.com/v/W5BPCpYousY&rel=0&autoplay=1')
-                            img(src="img/ironwill-video.jpg", class="img-responsive", alt="")
-                include form.jade
-
-    section.valores.bg--blue-sky.box
-        div.max-width
-            .valores__cont.mob-tab-2
-                .valores__item
-                    figure
-                        .valores-img
-                            img(src="img/coaching/bene01.svg", class="img-responsive", alt="")
-                        figcaption
-                            h4.title--sub4 Productividad:
-                            p.text--p4 A través del coaching se favorece a cada uno de los individuos, y en consecuencia a sus equipos para que se desempeñen de manera correcta y efectiva, algo que la capacitación tradicional no lo consigue.
-                .valores__item
-                    figure
-                        .valores-img
-                            img(src="img/coaching/bene02.svg", class="img-responsive", alt="")
-                        figcaption
-                            h4.title--sub4 Mayor aprendizaje:
-                            p.text--p4 El coaching favorece el aprendizaje y cataliza dicho proceso, sin pérdidas de tiempo, ya que permite lograrlo sin dejar las tareas habituales ni el lugar de trabajo.
-                .valores__item
-                    figure
-                        .valores-img
-                            img(src="img/coaching/bene03.svg", class="img-responsive", alt="")
-                        figcaption
-                            h4.title--sub4 Relación laboral:
-                            p.text--p4 El empleo efectivo de técnicas de coaching para el desarrollo de su gente requiere de una mayor consciencia en las respuestas que dan a cada una de las circunstancias que se presentan en el ámbito laboral.
-                .valores__item
-                    figure
-                        .valores-img
-                            img(src="img/coaching/bene04.svg", class="img-responsive", alt="")
-                        figcaption
-                            h4.title--sub4 Creatividad: 
-                            p.text--p4 A partir de ello se fomenta el aprendizaje y el descubrimiento de alternativas creativas para producir mayor efectividad en lo que cada quien se proponga.
-    
-    article.servicio-coaching.bg--grey-medium.box#servicios
-        div.max-width
-            .servicio-coaching__item.text--center
-                .servicio-coaching__header
-                    h2.title--sub2 ¿Que hacemos?
-                    p.text--p2 Ofrecemos un servicio de acompañamiento profesional que ayuda a las organizaciones a alcanzar los objetivos planteados; descubriendo y evaluando nuevas oportunidades, agilizando la toma de decisiones, facilitando la resolución de conflictos e implementando acciones innovadoras.
-                .servicio-coaching__img
-                    img(src="img/coaching/coaching-img.jpg", class="img-responsive", alt="")
-            .servicios__button
-                a(href="#contactanos").btn-submit Contáctanos
-    
-    section.banner-middle
-        .banner-middle__cont
-            .banner-middle__img-mob
-                img(src="img/coaching/banner-middle_mob.jpg", class="img-responsive", alt="")
-            .banner-middle__img-tab
-                img(src="img/coaching/banner-middle_tab.jpg", class="img-responsive", alt="")
-            .banner-middle__img-pc
-                img(src="img/coaching/banner-middle_pc.jpg", class="img-responsive", alt="")
-            .banner-middle__info
-                p.text--center La única persona que estas destinada a ser es la persona que decides ser.
+                        a(rel='shadowbox;width=560;height=315;', title='Ironwill', href='http://www.youtube.com/embed/W5BPCpYousY?rel=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0')
+                            img(src="img/play.png", width="100", alt="")
+                        p.text--main.text--white Ver Video
+                    .banner__button
+                        a(href="#contactanos").btn-submit Contáctanos
+                    .banner__dropdown
+                        a(href="#valores")
+                            img(src="img/down.png",width="40", alt="")
+        section.valores.bg--blue-sky.box#valores
+            div.max-width
+                .valores__cont.mob-tab-2
+                    .valores__item
+                        figure
+                            .valores-img
+                                img(src="img/coaching/bene01.svg", class="img-responsive", alt="")
+                            figcaption
+                                h4.title--sub4 Productividad:
+                                p.text--p4 A través del coaching se favorece a cada uno de los individuos, y en consecuencia a sus equipos para que se desempeñen de manera correcta y efectiva, algo que la capacitación tradicional no lo consigue.
+                    .valores__item
+                        figure
+                            .valores-img
+                                img(src="img/coaching/bene02.svg", class="img-responsive", alt="")
+                            figcaption
+                                h4.title--sub4 Mayor aprendizaje:
+                                p.text--p4 El coaching favorece el aprendizaje y cataliza dicho proceso, sin pérdidas de tiempo, ya que permite lograrlo sin dejar las tareas habituales ni el lugar de trabajo.
+                    .valores__item
+                        figure
+                            .valores-img
+                                img(src="img/coaching/bene03.svg", class="img-responsive", alt="")
+                            figcaption
+                                h4.title--sub4 Relación laboral:
+                                p.text--p4 El empleo efectivo de técnicas de coaching para el desarrollo de su gente requiere de una mayor consciencia en las respuestas que dan a cada una de las circunstancias que se presentan en el ámbito laboral.
+                    .valores__item
+                        figure
+                            .valores-img
+                                img(src="img/coaching/bene04.svg", class="img-responsive", alt="")
+                            figcaption
+                                h4.title--sub4 Creatividad: 
+                                p.text--p4 A partir de ello se fomenta el aprendizaje y el descubrimiento de alternativas creativas para producir mayor efectividad en lo que cada quien se proponga.
+        
+        article.servicio-coaching.bg--grey-medium.box#servicios
+            div.max-width
+                .servicio-coaching__item.text--center
+                    .servicio-coaching__header
+                        h2.title--sub2 ¿Que hacemos?
+                        p.text--p2 Ofrecemos un servicio de acompañamiento profesional que ayuda a las organizaciones a alcanzar los objetivos planteados; descubriendo y evaluando nuevas oportunidades, agilizando la toma de decisiones, facilitando la resolución de conflictos e implementando acciones innovadoras.
+                    .servicio-coaching__img
+                        img(src="img/coaching/coaching-img.jpg", class="img-responsive", alt="")
+                .servicios__button
+                    a(href="#contactanos").btn-submit Contáctanos
+        
+        section.banner-middle
+            .banner-middle__cont
+                .banner-middle__img-mob
+                    img(src="img/coaching/banner-middle_mob.jpg", class="img-responsive", alt="")
+                .banner-middle__img-tab
+                    img(src="img/coaching/banner-middle_tab.jpg", class="img-responsive", alt="")
+                .banner-middle__img-pc
+                    img(src="img/coaching/banner-middle_pc.jpg", class="img-responsive", alt="")
+                .banner-middle__info
+                    p.text--center La única persona que estas destinada a ser es la persona que decides ser.
 
     include equipo.jade
     include clientes.jade

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    title RSE
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+    link(rel="stylesheet", type="text/css", href="style.css")
+    link(href="favicon.ico", rel="shortcut icon", type="image/x-icon")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Abel", type="text/css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Fjalla+One", type="text/css")
+
+body
+    include header.jade
+    main#main
+        section.banner(role="banner").bg--grey-dark
+            div.max-width--extra.box.min
+                .banner__cont.text--center
+                    .header-banner
+                        h1.title--main COMPROMETIDOS CON LA COMUNIDAD 
+                        p.text--main.text--white Nos interesa grandemente tener un impacto social positivo, es por ello que nos comprometos con la comunidad, la juventud y el deporte.
+                    .video-banner
+                        a(rel='shadowbox;width=560;height=315;', title='Ironwill', href='http://www.youtube.com/embed/W5BPCpYousY?rel=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0')
+                            img(src="img/play.png", width="100", alt="")
+                        p.text--main.text--white Ver Video
+                    .banner__button
+                        a(href="#contactanos").btn-submit Contáctanos
+                    .banner__dropdown
+                        a(href="#valores")
+                            img(src="img/down.png",width="40", alt="")
+   
+        section.valores.bg--blue-sky.box#valores
+            div.max-width
+                .valores__header.text--center
+                    h3.title--sub3.text--grey-medium NUESTROS EJES DE TRABAJO
+                    p.text--p3 Trabajamos bajo cuatro puntos cada uno de nuestros trabajos con la comunidad
+                .valores__cont.mob-tab-2
+                    .valores__item
+                        figure
+                            .valores-img
+                                img(src="img/rse/bene01.svg", class="img-responsive", alt="")
+                            figcaption
+                                h4.title--sub4 Promoción educativa:
+                                p.text--p4 Realizamos charlas motivacionales en escuelas y centros de educación superior dirigidas a niños y jovenes en zonas de bajos recursos. Nuestro interés es poder brindar nuestras experiencias sobre todo con quienes más lo necesitan.
+                    .valores__item
+                        figure
+                            .valores-img
+                                img(src="img/rse/bene02.svg", class="img-responsive", alt="")
+                            figcaption
+                                h4.title--sub4 Becas Deportivas:
+                                p.text--p4 Gracias a nuestra amplia linea de contactos con organizaciones y gimnasios en todo Chile hemos ayudado a conseguir becas de entrenamiento especializado a muchos jovenes deportistas destacados.
+                    .valores__item
+                        figure
+                            .valores-img
+                                img(src="img/rse/bene03.svg", class="img-responsive", alt="")
+                            figcaption
+                                h4.title--sub4 Eventos Deportivos:
+                                p.text--p4 Nos sentimos orgullosos de ayudar a jovenes atletas a gestionar su participación en eventos tanto dentro de Chile como fuera del país. Nuestro principal valor es la experiencia además de una amplia linea de contactos en el mundo deportivo.
+                    .valores__item
+                        figure
+                            .valores-img
+                                img(src="img/rse/bene04.svg", class="img-responsive", alt="")
+                            figcaption
+                                h4.title--sub4 Atletas paralimpicos:
+                                p.text--p4 Al ser nuestros principales miembros atletas paralimpicos entendemos desde adentro sus necesidades. Es por ello que llevamos años ayudando y motivando más jovenes a superarse en cada aspecto de su vida.
+        
+        article.servicio-coaching.bg--grey-medium.box#servicios
+            div.max-width
+                .servicio-coaching__item.text--center
+                    .servicio-coaching__header
+                        h2.title--sub2 ¿Que hacemos?
+                        p.text--p2 Evaluamos las necesidades de grupos vulnerables contamos con el apoyo de muchas instituciones involucradas también interesadas en el bienestar de la comunidad y el deporte. Realizamos charlas motivacionales, facilitamos becas y gestionamos la participación de atletas o equipos completos en eventos deportivos importantes.
+                    .servicio-coaching__img
+                        img(src="img/rse/servicio-mob.jpg", class="img-responsive", alt="")
+                .servicios__button
+                    a(href="#contactanos").btn-submit Contáctanos
+        
+        section.banner-middle
+            .banner-middle__cont
+                .banner-middle__img-mob
+                    img(src="img/rse/banner-middle_mob.jpg", class="img-responsive", alt="")
+                .banner-middle__img-tab
+                    img(src="img/rse/banner-middle_tab.jpg", class="img-responsive", alt="")
+                .banner-middle__img-pc
+                    img(src="img/rse/banner-middle_pc.jpg", class="img-responsive", alt="")
+                .banner-middle__info
+                    p.text--center La solidaridad y la ayuda mutua son los medios más importantes para el sustento humano..
+
+    include equipo.jade
+    include clientes.jade
+    include footer.jade
+
+    script(src='//code.jquery.com/jquery-1.12.0.min.js')
+    script(src='js/main.js')
+    script(type='text/javascript').
+        Shadowbox.init();

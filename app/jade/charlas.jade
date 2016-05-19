@@ -7,77 +7,81 @@ head
     link(rel="stylesheet", type="text/css", href="style.css")
     link(href="favicon.ico", rel="shortcut icon", type="image/x-icon")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Abel", type="text/css")
-    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Anton", type="text/css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Fjalla+One", type="text/css")
 
 body
     include header.jade
     main#main
-    section.banner(role="banner").box-min.bg--grey-dark
-        div.max-width
-            .header-banner.text--center
-                h1.title--main CHARLAS MOTIVACIONALES 
-                p.text--main.text--white Embajadores en deportes y liderazgo, cumplimos junto a ti todas tus metas. Nunca hay que rendirse, solo hay que ver hacia adelante.
-            .banner__cont
-                .banner__main
+        section.banner(role="banner").bg--grey-dark
+            div.max-width--extra.box.min
+                .banner__cont.text--center
+                    .header-banner
+                        h1.title--main CHARLAS MOTIVACIONALES  
+                        p.text--main.text--white Embajadores en deportes y liderazgo, cumplimos junto a ti todas tus metas. Nunca hay que rendirse, solo hay que ver hacia adelante.
                     .video-banner
-                        a(rel='shadowbox;width=405;height=340;', title='Ironwill', href='http://www.youtube.com/v/W5BPCpYousY&rel=0&autoplay=1')
-                            img(src="img/ironwill-video.jpg", class="img-responsive", alt="")
-                include form.jade
+                        a(rel='shadowbox;width=560;height=315;', title='Ironwill', href='http://www.youtube.com/embed/W5BPCpYousY?rel=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0')
+                            img(src="img/play.png", width="100", alt="")
+                        p.text--main.text--white Ver Video
+                    .banner__button
+                        a(href="#contactanos").btn-submit Contáctanos
+                    .banner__dropdown
+                        a(href="#valores")
+                            img(src="img/down.png",width="40", alt="")
 
-    section.valores.bg--blue-sky.box
-        div.max-width
-            .valores__cont.mob-tab-2
-                .valores__item
-                    figure
-                        .valores-img
-                            img(src="img/charlas/bene01.svg", class="img-responsive", alt="")
-                        figcaption
-                            h4.title--sub4 Adaptabilidad:
-                            p.text--p4 Fomentamos el espíritu de cambio y de adaptación a cada situación ya sea en nuestras vidas laborales y personales, con la meta de mejorar las capacidades naturales de superación en cada persona.
-                .valores__item
-                    figure
-                        .valores-img
-                            img(src="img/charlas/bene02.svg", class="img-responsive", alt="")
-                        figcaption
-                            h4.title--sub4 Perder el miedo:
-                            p.text--p4 Cumple todas tus metas al creer totalmente en todas tus capacidades, deja de lado la zona de confort que no te deja crecer. El miedo es el peor enemigo del crecimiento por temer a lo desconocido. 
-                .valores__item
-                    figure
-                        .valores-img
-                            img(src="img/charlas/bene03.svg", class="img-responsive", alt="")
-                        figcaption
-                            h4.title--sub4 Confianza:
-                            p.text--p4 Creer en uno mismo es la principal herramienta para lograr grandes beneficios, ya sean personales o con terceros. Si tú crees que no podrás alcanzar tus metas porque no posees las capacidades para hacerlo, no lo lograrás.
-                .valores__item
-                    figure
-                        .valores-img
-                            img(src="img/charlas/bene04.svg", class="img-responsive", alt="")
-                        figcaption
-                            h4.title--sub4 Mayor efectividad: 
-                            p.text--p4 En una atmósfera en la cual las personas son valoradas por su capacidad de aprender, impera la iniciativa, y al encontrarse ante un imprevisto o una emergencia la gente toma acción y riesgos.
-    
-    article.servicio-charlas.bg--grey-medium.box#servicios
-        div.max-width
-            .servicio-charlas__item.text--center
-                .servicio-charlas__header
-                    h2.title--sub2 ¿Que hacemos?
-                    p.text--p2 Nuestras charlas buscan, a través de testimonios y discursos interactivos, ayudar a todo aquel que lo necesite, para que pueda alcanzar sus metas y crear una visión objetiva y positiva de sí mismo y de su alrededor.
-                .servicio-charlas__img
-                    img(src="img/charlas/charlas-img.jpg", class="img-responsive", alt="")
-            .servicios__button
-                a(href="#contactanos").btn-submit Contáctanos
-    
-    section.banner-middle
-        .banner-middle__cont
-            .banner-middle__img-mob
-                img(src="img/charlas/banner-middle_mob.jpg", class="img-responsive", alt="")
-            .banner-middle__img-tab
-                img(src="img/charlas/banner-middle_tab.jpg", class="img-responsive", alt="")
-            .banner-middle__img-pc
-                img(src="img/charlas/banner-middle_pc.jpg", class="img-responsive", alt="")
+        section.valores.bg--blue-sky.box#valores
+            div.max-width
+                .valores__cont.mob-tab-2
+                    .valores__item
+                        figure
+                            .valores-img
+                                img(src="img/charlas/bene01.svg", class="img-responsive", alt="")
+                            figcaption
+                                h4.title--sub4 Adaptabilidad:
+                                p.text--p4 Fomentamos el espíritu de cambio y de adaptación a cada situación ya sea en nuestras vidas laborales y personales, con la meta de mejorar las capacidades naturales de superación en cada persona.
+                    .valores__item
+                        figure
+                            .valores-img
+                                img(src="img/charlas/bene02.svg", class="img-responsive", alt="")
+                            figcaption
+                                h4.title--sub4 Perder el miedo:
+                                p.text--p4 Cumple todas tus metas al creer totalmente en todas tus capacidades, deja de lado la zona de confort que no te deja crecer. El miedo es el peor enemigo del crecimiento por temer a lo desconocido. 
+                    .valores__item
+                        figure
+                            .valores-img
+                                img(src="img/charlas/bene03.svg", class="img-responsive", alt="")
+                            figcaption
+                                h4.title--sub4 Confianza:
+                                p.text--p4 Creer en uno mismo es la principal herramienta para lograr grandes beneficios, ya sean personales o con terceros. Si tú crees que no podrás alcanzar tus metas porque no posees las capacidades para hacerlo, no lo lograrás.
+                    .valores__item
+                        figure
+                            .valores-img
+                                img(src="img/charlas/bene04.svg", class="img-responsive", alt="")
+                            figcaption
+                                h4.title--sub4 Mayor efectividad: 
+                                p.text--p4 En una atmósfera en la cual las personas son valoradas por su capacidad de aprender, impera la iniciativa, y al encontrarse ante un imprevisto o una emergencia la gente toma acción y riesgos.
+        
+        article.servicio-charlas.bg--grey-medium.box#servicios
+            div.max-width
+                .servicio-charlas__item.text--center
+                    .servicio-charlas__header
+                        h2.title--sub2 ¿Que hacemos?
+                        p.text--p2 Nuestras charlas buscan, a través de testimonios y discursos interactivos, ayudar a todo aquel que lo necesite, para que pueda alcanzar sus metas y crear una visión objetiva y positiva de sí mismo y de su alrededor.
+                    .servicio-charlas__img
+                        img(src="img/charlas/charlas-img.jpg", class="img-responsive", alt="")
+                .servicios__button
+                    a(href="#contactanos").btn-submit Contáctanos
+        
+        section.banner-middle
+            .banner-middle__cont
+                .banner-middle__img-mob
+                    img(src="img/charlas/banner-middle_mob.jpg", class="img-responsive", alt="")
+                .banner-middle__img-tab
+                    img(src="img/charlas/banner-middle_tab.jpg", class="img-responsive", alt="")
+                .banner-middle__img-pc
+                    img(src="img/charlas/banner-middle_pc.jpg", class="img-responsive", alt="")
 
-            .banner-middle__info
-                p.text--center A la cima no se llega superando a los demás sino superándose a si mismo.
+                .banner-middle__info
+                    p.text--center A la cima no se llega superando a los demás sino superándose a si mismo.
     
     include equipo.jade
     include clientes.jade
