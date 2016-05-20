@@ -88,17 +88,23 @@ body
 						
 
 .banner
-	+above(b1)
-		//width 100%
-		//height 100vh
-		background-image url("img/videotablet.jpg") 50% 50% no-repeat
+	+above(b2)
+		background-image url("img/videotablet.jpg") 
+		background-repeat no-repeat
+		background-position center
 		background-attachment fixed
 		background-size cover
-		background-position center
-	+above(b2)
+	+above(b3)
 		background-image url("img/videopc.jpg")
-		
+	
+	&__overlay
+		+above(b2)
+			background-color red
+			opacity 0.35	
+
 	&__cont
+		
+	&__content
 		.header-banner
 			line-height 1
 			text-align center
@@ -202,45 +208,6 @@ body
 		padding 1.5em 0
 		text-align center
 		
-/*.banner-middle
-	&__cont
-		position relative
-		img
-			display block
-	&__img-mob
-		+above(640px)
-			display none
-	
-	&__img-tab
-		display none
-		+above(640px)
-			display block
-		+above(b3)
-			display none
-		
-	&__img-pc
-		display none
-		+above(b3)
-			display block
-		
-	&__info
-		position absolute
-		top 50%
-		left 0
-		right 0
-		transform translatey(-50%)
-		margin auto
-		
-		width 60%
-
-		p
-			font-family Abel
-			font-size 2.2em
-			color white
-			+above(b1)
-				font-size 2.6em
-			+above(b2)
-				font-size 3.125em*/
 	
 .equipo
 	&__header
@@ -429,7 +396,8 @@ body
 		display none
 		+above(b3)
 			display block
-			
+
+.banner-middle,			
 .banner-middle-rse,
 .banner-middle-charlas,
 .banner-middle-coaching,
@@ -454,6 +422,13 @@ body
 			+above(b2)
 				font-size 3.125em
 
+.banner-middle
+	background-image url("img/banner-middle_mob.jpg")
+	+above(b2)
+		background-image url("img/banner-middle_tab.jpg")
+	+above(b3)
+		background-image url("img/banner-middle_pc.jpg")
+			
 .banner-middle-rse
 	background-image url("img/rse/banner-middle_mob.jpg")
 	+above(b2)

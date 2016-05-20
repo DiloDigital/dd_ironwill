@@ -13,20 +13,21 @@ body
     include header.jade
     main#main
         section.banner(role="banner").bg--grey-dark
-            div.max-width--extra.box.min
-                .banner__cont.text--center
-                    .header-banner
-                        h1.title--main COACHING INTEGRATIVO 
-                        p.text--main.text--white Superación y el máximo desarrollo profesional y personal a través de una profunda transformación de perspectiva y aumento del compromiso todo con ayuda del trabajo en conjunto y charlas dinámicas.
-                    .video-banner
-                        a(rel='shadowbox;width=560;height=315;', title='Ironwill', href='http://www.youtube.com/embed/W5BPCpYousY?rel=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0')
-                            img(src="img/play.png", width="100", alt="")
-                        p.text--main.text--white Ver Video
-                    .banner__button
-                        a(href="#contactanos").btn-submit Contáctanos
-                    .banner__dropdown
-                        a(href="#valores")
-                            img(src="img/down.png",width="40", alt="")
+            .banner__overlay
+                .banner__cont.box
+                    .banner__content.text--center.max-width
+                        .header-banner
+                            h1.title--main COACHING INTEGRATIVO 
+                            p.text--main.text--white Superación y el máximo desarrollo profesional y personal a través de una profunda transformación de perspectiva y aumento del compromiso todo con ayuda del trabajo en conjunto y charlas dinámicas.
+                        .video-banner
+                            a(rel='shadowbox;width=560;height=315;', title='Ironwill', href='http://www.youtube.com/embed/W5BPCpYousY?rel=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0')
+                                img(src="img/play.png", width="100", alt="")
+                            p.text--main.text--white Ver Video
+                        .banner__button
+                            a(href="#contactanos").btn-submit Contáctanos
+                        .banner__dropdown
+                            a(href="#valores")
+                                img(src="img/down.png",width="40", alt="")
         section.valores.bg--blue-sky.box#valores
             div.max-width
                 .valores__cont.mob-tab-2

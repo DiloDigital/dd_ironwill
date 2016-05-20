@@ -1,20 +1,20 @@
 main#main
 	section.banner(role="banner").bg--grey-dark
-		div.max-width--extra.box.min
-			.banner__cont.text--center
-				.header-banner
-					h1.title--main TU EQUIPO TIENE MUCHO MÁS QUE DAR 
-					p.text--main.text--white ¿Qué es IronWill? Es una consultora dedicada a entregar servicios de comunicación motivacional y de responsabilidad social que busca generar un impacto positivo en los públicos y en sus entornos.
-				.video-banner
-					a(rel='shadowbox;width=560;height=315;', title='Ironwill', href='http://www.youtube.com/embed/W5BPCpYousY?rel=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0')
-						img(src="img/play.png", width="100", alt="")
-					p.text--main.text--white Ver Video
-				.banner__button
-					a(href="#contactanos").btn-submit Contáctanos
-				.banner__dropdown
-					a(href="#valores")
-						img(src="img/down.png",width="40", alt="")
-					
+		.banner__overlay
+			.banner__cont.box
+				.banner__content.text--center.max-width
+					.header-banner
+						h1.title--main TU EQUIPO TIENE MUCHO MÁS QUE DAR
+						p.text--main.text--white ¿Qué es IronWill? Es una consultora dedicada a entregar servicios de comunicación motivacional y de responsabilidad social que busca generar un impacto positivo en los públicos y en sus entornos.
+					.video-banner
+						a(rel='shadowbox;width=560;height=315;', title='Ironwill', href='http://www.youtube.com/embed/W5BPCpYousY?rel=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0')
+							img(src="img/play.png", width="100", alt="")
+						p.text--main.text--white Ver Video
+					.banner__button
+						a(href="#contactanos").btn-submit Contáctanos
+					.banner__dropdown
+						a(href="#valores")
+			img(src="img/down.png",width="40", alt="")
 	section.valores.bg--blue-sky.box#valores
 		div.max-width
 			.valores__cont.mob-tab-2
@@ -81,12 +81,8 @@ main#main
 				a(href="#contactanos").btn-submit Contáctanos
 
 	section.banner-middle
-		.banner-middle__cont
-			.banner-middle__img-mob
-				img(src="img/banner-middle_mob.jpg", class="img-responsive", alt="")
-			.banner-middle__img-tab
-				img(src="img/banner-middle_tab.jpg", class="img-responsive", alt="")
-			.banner-middle__img-pc
-				img(src="img/banner-middle_pc.jpg", class="img-responsive", alt="")
-			.banner-middle__info
-				p.text--center Logra tus metas, ahora y siempre
+		section.banner-middle-crecimiento(role="banner")
+			.banner-middle-crecimiento__overlay
+				.banner-middle-crecimiento__cont.box.max-width
+					.banner-middle-crecimiento__info
+						p Logra tus metas, ahora y siempre

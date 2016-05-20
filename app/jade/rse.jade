@@ -13,21 +13,21 @@ body
     include header.jade
     main#main
         section.banner(role="banner").bg--grey-dark
-            div.max-width--extra.box.min
-                .banner__cont.text--center
-                    .header-banner
-                        h1.title--main COMPROMETIDOS CON LA COMUNIDAD 
-                        p.text--main.text--white Nos interesa grandemente tener un impacto social positivo, es por ello que nos comprometos con la comunidad, la juventud y el deporte.
-                    .video-banner
-                        a(rel='shadowbox;width=560;height=315;', title='Ironwill', href='http://www.youtube.com/embed/W5BPCpYousY?rel=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0')
-                            img(src="img/play.png", width="100", alt="")
-                        p.text--main.text--white Ver Video
-                    .banner__button
-                        a(href="#contactanos").btn-submit Contáctanos
-                    .banner__dropdown
-                        a(href="#valores")
-                            img(src="img/down.png",width="40", alt="")
-   
+            .banner__overlay
+                .banner__cont.box
+                    .banner__content.text--center.max-width
+                        .header-banner
+                            h1.title--main COMPROMETIDOS CON LA COMUNIDAD
+                            p.text--main.text--white Nos interesa grandemente tener un impacto social positivo, es por ello que nos comprometos con la comunidad, la juventud y el deporte.
+                        .video-banner
+                            a(rel='shadowbox;width=560;height=315;', title='Ironwill', href='http://www.youtube.com/embed/W5BPCpYousY?rel=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0')
+                                img(src="img/play.png", width="100", alt="")
+                            p.text--main.text--white Ver Video
+                        .banner__button
+                            a(href="#contactanos").btn-submit Contáctanos
+                        .banner__dropdown
+                            a(href="#valores")
+                                img(src="img/down.png",width="40", alt="")
         section.valores.bg--blue-sky.box#valores
             div.max-width
                 .valores__header.text--center
