@@ -65,22 +65,20 @@ body
                     .servicio-crecimiento__header
                         h2.title--sub2 ¿Que hacemos?
                         p.text--p2 Nuestra amplia experiencia como atletas destacados nos permite poner a tu servicio la formación, rigor y beneficios que hemos adquirido por llevar una vida ligada al deporte. Además, contamos con una amplia red de especialistas que acercamos a ti y a tu equipo para ayudarlos a llegar al siguiente nivel.
-                    .servicio-crecimiento__img
-                        img(src="img/crecimiento/crecimiento-img.jpg", class="img-responsive", alt="")
+                    .servicio-crecimiento__img-mob
+                        img(src="img/crecimiento/servicio-mob.jpg", class="img-responsive", alt="")
+                    .servicio-crecimiento__img-tab
+                        img(src="img/crecimiento/servicio-tab.jpg", class="img-responsive", alt="")
+                    .servicio-crecimiento__img-pc
+                        img(src="img/crecimiento/servicio-pc.jpg", class="img-responsive", alt="")
                 .servicios__button
                     a(href="#contactanos").btn-submit Contáctanos
         
-        section.banner-middle
-            .banner-middle__cont
-                .banner-middle__img-mob
-                    img(src="img/crecimiento/banner-middle_mob.jpg", class="img-responsive", alt="")
-                .banner-middle__img-tab
-                    img(src="img/crecimiento/banner-middle_tab.jpg", class="img-responsive", alt="")
-                .banner-middle__img-pc
-                    img(src="img/crecimiento/banner-middle_pc.jpg", class="img-responsive", alt="")
-
-                .banner-middle__info
-                    p.text--center Si buscas resultados distintos no hagas siempre lo mismo.
+        section.banner-middle-crecimiento(role="banner")
+            .banner-middle-crecimiento__overlay
+                .banner-middle-crecimiento__cont.box.max-width
+                    .banner-middle-crecimiento__info
+                        p.text--center Si buscas resultados distintos no hagas siempre lo mismo.
 
     include equipo.jade
     include clientes.jade

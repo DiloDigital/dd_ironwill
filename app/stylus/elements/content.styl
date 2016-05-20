@@ -10,7 +10,7 @@ body
 	font-size 1rem
 	//min-height 100vh
 	width 100%
-		
+	min-width b1	
 	
 
 .header
@@ -202,7 +202,7 @@ body
 		padding 1.5em 0
 		text-align center
 		
-.banner-middle
+/*.banner-middle
 	&__cont
 		position relative
 		img
@@ -240,7 +240,7 @@ body
 			+above(b1)
 				font-size 2.6em
 			+above(b2)
-				font-size 3.125em
+				font-size 3.125em*/
 	
 .equipo
 	&__header
@@ -378,21 +378,26 @@ body
 			justify-content space-between
 
 
+//****************
+// SECCIONES:
 // Crecimiento
 // Coaching
 // Charlas
+// RSE
+//++++++++++++++++
+
 
 .servicio-crecimiento,
 .servicio-coaching,
-.servicio-charlas
+.servicio-charlas,
+.servicio-rse
 
 	&__item
-		display flex
-		flex-direction column
 		+above(b2)
+			display flex
 			flex-direction row
-			justify-content space-between
-			//align-items center
+			justify-content space-around
+			padding-bottom 1em
 		
 	&__header
 		width 100%
@@ -400,15 +405,83 @@ body
 		+above(b2)
 			width 40%
 			text-align left
+			margin-right 2em
 		p
 			color white
-	&__img
-		width 90%
-		margin auto
-		padding-bottom 2em
+	
+	&__img-mob
+		padding 2em
 		img
-			width 70%
-			//border-radius 0.5em
+			display block
 		+above(b2)
-			width 60%
-			//margin 5% auto
+			display none
+
+	&__img-tab
+		padding 0
+		display none
+		+above(b2)
+			align-self center
+			display block
+		+above(b3)
+			display none
+		
+	&__img-pc
+		display none
+		+above(b3)
+			display block
+			
+.banner-middle-rse,
+.banner-middle-charlas,
+.banner-middle-coaching,
+.banner-middle-crecimiento
+	background-attachment fixed
+	background-size cover
+	background-position center
+	background-repeat no-repeat
+	&__overlay
+		background-color red
+		opacity 0.35
+	&__cont
+	
+	&__info
+		p
+			font-family Abel
+			font-size 2.2em
+			color white
+			text-align center
+			+above(b1)
+				font-size 2.2em
+			+above(b2)
+				font-size 3.125em
+
+.banner-middle-rse
+	background-image url("img/rse/banner-middle_mob.jpg")
+	+above(b2)
+		background-image url("img/rse/banner-middle_tab.jpg")
+	+above(b3)
+		background-image url("img/rse/banner-middle_pc.jpg")
+			
+.banner-middle-charlas
+	background-image url("img/charlas/banner-middle_mob.jpg")
+	+above(b2)
+		background-image url("img/charlas/banner-middle_tab.jpg")
+	+above(b3)
+		background-image url("img/charlas/banner-middle_pc.jpg")
+			
+.banner-middle-coaching
+	background-image url("img/coaching/banner-middle_mob.jpg")
+	+above(b2)
+		background-image url("img/coaching/banner-middle_tab.jpg")
+	+above(b3)
+		background-image url("img/coaching/banner-middle_pc.jpg")
+			
+.banner-middle-crecimiento
+	background-image url("img/crecimiento/banner-middle_mob.jpg")
+	+above(b2)
+		background-image url("img/crecimiento/banner-middle_tab.jpg")
+	+above(b3)
+		background-image url("img/crecimiento/banner-middle_pc.jpg")
+			
+
+
+

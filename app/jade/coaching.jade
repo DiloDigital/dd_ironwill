@@ -65,21 +65,20 @@ body
                     .servicio-coaching__header
                         h2.title--sub2 ¿Que hacemos?
                         p.text--p2 Ofrecemos un servicio de acompañamiento profesional que ayuda a las organizaciones a alcanzar los objetivos planteados; descubriendo y evaluando nuevas oportunidades, agilizando la toma de decisiones, facilitando la resolución de conflictos e implementando acciones innovadoras.
-                    .servicio-coaching__img
-                        img(src="img/coaching/coaching-img.jpg", class="img-responsive", alt="")
+                    .servicio-coaching__img-mob
+                        img(src="img/coaching/servicio-mob.jpg", class="img-responsive", alt="")
+                    .servicio-coaching__img-tab
+                        img(src="img/coaching/servicio-tab.jpg", class="img-responsive", alt="")
+                    .servicio-coaching__img-pc
+                        img(src="img/coaching/servicio-pc.jpg", class="img-responsive", alt="")
                 .servicios__button
                     a(href="#contactanos").btn-submit Contáctanos
         
-        section.banner-middle
-            .banner-middle__cont
-                .banner-middle__img-mob
-                    img(src="img/coaching/banner-middle_mob.jpg", class="img-responsive", alt="")
-                .banner-middle__img-tab
-                    img(src="img/coaching/banner-middle_tab.jpg", class="img-responsive", alt="")
-                .banner-middle__img-pc
-                    img(src="img/coaching/banner-middle_pc.jpg", class="img-responsive", alt="")
-                .banner-middle__info
-                    p.text--center La única persona que estas destinada a ser es la persona que decides ser.
+        section.banner-middle-coaching(role="banner")
+            .banner-middle-coaching__overlay
+                .banner-middle-coaching__cont.box.max-width
+                    .banner-middle-coaching__info
+                        p La única persona que estas destinada a ser es la persona que decides ser.
 
     include equipo.jade
     include clientes.jade

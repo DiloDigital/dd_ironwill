@@ -66,22 +66,21 @@ body
                     .servicio-charlas__header
                         h2.title--sub2 ¿Que hacemos?
                         p.text--p2 Nuestras charlas buscan, a través de testimonios y discursos interactivos, ayudar a todo aquel que lo necesite, para que pueda alcanzar sus metas y crear una visión objetiva y positiva de sí mismo y de su alrededor.
-                    .servicio-charlas__img
-                        img(src="img/charlas/charlas-img.jpg", class="img-responsive", alt="")
+                    .servicio-charlas__img-mob
+                        img(src="img/charlas/servicio-mob.jpg", class="img-responsive", alt="")
+                    .servicio-charlas__img-tab
+                        img(src="img/charlas/servicio-tab.jpg", class="img-responsive", alt="")
+                    .servicio-charlas__img-pc
+                        img(src="img/charlas/servicio-pc.jpg", class="img-responsive", alt="")
                 .servicios__button
                     a(href="#contactanos").btn-submit Contáctanos
         
-        section.banner-middle
-            .banner-middle__cont
-                .banner-middle__img-mob
-                    img(src="img/charlas/banner-middle_mob.jpg", class="img-responsive", alt="")
-                .banner-middle__img-tab
-                    img(src="img/charlas/banner-middle_tab.jpg", class="img-responsive", alt="")
-                .banner-middle__img-pc
-                    img(src="img/charlas/banner-middle_pc.jpg", class="img-responsive", alt="")
+        section.banner-middle-charlas(role="banner")
+            .banner-middle-charlas__overlay
+                .banner-middle-charlas__cont.box.max-width
+                    .banner-middle-charlas__info
+                        p A la cima no se llega superando a los demás sino superándose a si mismo.
 
-                .banner-middle__info
-                    p.text--center A la cima no se llega superando a los demás sino superándose a si mismo.
     
     include equipo.jade
     include clientes.jade

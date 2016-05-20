@@ -31,8 +31,8 @@ body
         section.valores.bg--blue-sky.box#valores
             div.max-width
                 .valores__header.text--center
-                    h3.title--sub3.text--grey-medium NUESTROS EJES DE TRABAJO
-                    p.text--p3 Trabajamos bajo cuatro puntos cada uno de nuestros trabajos con la comunidad
+                    h3.title--sub3.text--grey NUESTROS EJES DE TRABAJO
+                    p.text--p4 Trabajamos bajo cuatro puntos cada uno de nuestros trabajos con la comunidad
                 .valores__cont.mob-tab-2
                     .valores__item
                         figure
@@ -63,28 +63,29 @@ body
                                 h4.title--sub4 Atletas paralimpicos:
                                 p.text--p4 Al ser nuestros principales miembros atletas paralimpicos entendemos desde adentro sus necesidades. Es por ello que llevamos años ayudando y motivando más jovenes a superarse en cada aspecto de su vida.
         
-        article.servicio-coaching.bg--grey-medium.box#servicios
+        article.servicio-rse.bg--grey-medium.box#servicios
             div.max-width
-                .servicio-coaching__item.text--center
-                    .servicio-coaching__header
+                .servicio-rse__item.text--center
+                    .servicio-rse__header
                         h2.title--sub2 ¿Que hacemos?
                         p.text--p2 Evaluamos las necesidades de grupos vulnerables contamos con el apoyo de muchas instituciones involucradas también interesadas en el bienestar de la comunidad y el deporte. Realizamos charlas motivacionales, facilitamos becas y gestionamos la participación de atletas o equipos completos en eventos deportivos importantes.
-                    .servicio-coaching__img
+                    .servicio-rse__img-mob
                         img(src="img/rse/servicio-mob.jpg", class="img-responsive", alt="")
+                    .servicio-rse__img-tab
+                        img(src="img/rse/servicio-tab.jpg", class="img-responsive", alt="")
+                    .servicio-rse__img-pc
+                        img(src="img/rse/servicio-pc.jpg", class="img-responsive", alt="")
+
                 .servicios__button
                     a(href="#contactanos").btn-submit Contáctanos
         
-        section.banner-middle
-            .banner-middle__cont
-                .banner-middle__img-mob
-                    img(src="img/rse/banner-middle_mob.jpg", class="img-responsive", alt="")
-                .banner-middle__img-tab
-                    img(src="img/rse/banner-middle_tab.jpg", class="img-responsive", alt="")
-                .banner-middle__img-pc
-                    img(src="img/rse/banner-middle_pc.jpg", class="img-responsive", alt="")
-                .banner-middle__info
-                    p.text--center La solidaridad y la ayuda mutua son los medios más importantes para el sustento humano..
-
+        section.banner-middle-rse
+            .banner-middle-rse__overlay
+                .banner-middle-rse__cont.box.max-width
+                    .banner-middle-rse__info
+                        p La solidaridad y la ayuda mutua son los medios más importantes para el sustento humano.
+                    
+        
     include equipo.jade
     include clientes.jade
     include footer.jade
