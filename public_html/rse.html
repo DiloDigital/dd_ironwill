@@ -10,20 +10,23 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One" type="text/css"/>
 </head>
 <body>
-  <header id="header" role="presentation" class="header bg--white">
+  <header id="header" role="presentation" class="header bg--white max-width--extra">
     <div class="logo"><a href="http://ironwill.work" title="Ironwill" class="logotipo">
-        <div class="slogan"><img src="img/ironwill-slogan.png" alt="" class="img-responsive"/></div></a>
+        <div class="slogan"><img src="img/ironwill-slogan.png" width="260" alt=""/></div></a>
       <div id="menu" class="toggle-menu icon-menu"></div>
     </div>
     <nav id="navigation" role="navigation" class="main-nav">
       <div class="menu-social">
         <ul class="menu-social__list non-margin">
-          <li class="menu-social__item"><a href="https://www.facebook.com/ironwillchile/" target="_blank" class="menu-social__link icon-facebook"></a><a href="https://www.instagram.com/ironwillchile/" target="_blank" class="menu-social__link icon-instagram"></a></li>
+          <li class="menu-social__item"><a href="https://facebook.com/ironwillchile/" target="_blank" class="icon-facebook menu-social__link"></a></li>
+          <li class="menu-social__item"><a href="https://instagram.com/ironwillchile/" target="_blank" class="icon-instagram menu-social__link"></a></li>
         </ul>
       </div>
       <div id="target" class="main-nav__cont">
         <ul class="main-nav__list non-margin">
-          <li class="main-nav__item list-none"><a href="http://ironwill.work/#servicios" class="main-nav__link">Servicios</a><a href="http://ironwill.work/rse.html" class="main-nav__link">RSE</a><a href="#contactanos" class="main-nav__link">Contáctenos</a></li>
+          <li class="main-nav__item list-none"><a href="http://ironwill.work/#servicios" title="" class="main-nav__link">Servicios</a></li>
+          <li class="main-nav__item list-none"><a href="http://ironwill.work/rse.html" title="" class="main-nav__link">RSE</a></li>
+          <li class="main-nav__item list-none"><a href="#contactanos" title="" class="main-nav__link">Contáctenos</a></li>
         </ul>
       </div>
     </nav>
@@ -184,63 +187,66 @@
     </div>
   </section>
   <footer role="contentinfo" class="footer bg--grey-medium">
-    <div id="contactanos" class="contact text--center box">
-      <div class="contacto__header">
-        <h2 class="title--sub2">Ponte en contacto ya mismo. ¡Te esperamos!</h2>
-      </div>
-      <div class="contact__subtitle1">
-        <p class="text--p4 text--white">Solo escríbenos y cuéntanos sobre tus inquietudes y nos comunicaremos lo más pronto posible contigo</p>
-      </div>
-      <div class="contact-right">
-        <div class="contact__form">
-          <form action="mailer.php" method="POST" id="ajax-contact" class="form">
-            <fieldset id="inputs">
-              <legend>Datos Personales </legend>
-              <div class="form__group">
-                <label for="nombre">Nombre</label>
-                <input id="nombre" type="text" name="nombre" placeholder="Tu nombre" required="required" class="form__control"/>
+    <div class="max-width--extra">
+      <div id="contactanos" class="contact text--center box">
+        <div class="contacto__header">
+          <h2 class="title--sub2-extra">Ponte en contacto ya mismo. ¡Te esperamos!</h2>
+        </div>
+        <div class="contact__subtitle1">
+          <p class="text--p4 text--white">Solo escríbenos y cuéntanos sobre tus inquietudes y nos comunicaremos lo más pronto posible contigo</p>
+        </div>
+        <div class="contact-right">
+          <div class="contact__form">
+            <form action="mailer.php" method="POST" id="ajax-contact" class="form">
+              <fieldset id="inputs">
+                <legend>Datos Personales </legend>
+                <div class="form__group">
+                  <label for="nombre">Nombre</label>
+                  <input id="nombre" type="text" name="nombre" placeholder="Tu nombre" required="required" class="form__control"/>
+                </div>
+                <div class="form__group">
+                  <label for="correo">Correo</label>
+                  <input id="correo" type="correo" name="correo" placeholder="Tu correo" required="required" class="form__control"/>
+                </div>
+                <div class="form__group">
+                  <label for="telefono">Teléfono</label>
+                  <input id="telefono" type="text" name="telefono" placeholder="Tu teléfono" required="required" class="form__control"/>
+                </div>
+                <div class="form__group">
+                  <label mensaje="mensaje">Mensaje</label>
+                  <textarea id="mensaje" name="Cuéntanos" placeholder="Tu mensaje" required="required" class="form__control"></textarea>
+                </div>
+              </fieldset>
+              <div class="form__submit">
+                <button id="submit" class="btn-submit">Enviar Mensaje</button>
               </div>
-              <div class="form__group">
-                <label for="correo">Correo</label>
-                <input id="correo" type="correo" name="correo" placeholder="Tu correo" required="required" class="form__control"/>
-              </div>
-              <div class="form__group">
-                <label for="telefono">Teléfono</label>
-                <input id="telefono" type="text" name="telefono" placeholder="Tu teléfono" required="required" class="form__control"/>
-              </div>
-              <div class="form__group">
-                <label mensaje="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="Cuéntanos" placeholder="Tu mensaje" required="required" class="form__control"></textarea>
-              </div>
-            </fieldset>
-            <div class="form__submit">
-              <button id="submit" class="btn-submit">Enviar Mensaje</button>
-            </div>
-            <div id="form-messages"></div>
-          </form>
+              <div id="form-messages"></div>
+            </form>
+          </div>
+        </div>
+        <div class="contact-left">
+          <div class="contact__subtitle2">
+            <p class="text--main text--white">Solo escríbenos y cuéntanos sobre tus inquietudes y nos comunicaremos lo más pronto posible contigo</p>
+          </div>
+          <div class="contact__info">
+            <p>Contacto: <span>954 39893 43</span></p>
+            <p>Mail: <span>hola@ironwill.work</span></p>
+          </div>
+          <div class="menu-social">
+            <ul class="menu-social__list non-margin list-none">
+              <li class="menu-social__item"><a href="https://facebook.com/ironwillchile/" target="_blank" class="icon-facebook menu-social__link"></a></li>
+              <li class="menu-social__item"><a href="https://instagram.com/ironwillchile/" target="_blank" class="icon-instagram menu-social__link"></a></li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="contact-left">
-        <div class="contact__subtitle2">
-          <p class="text--main text--white">Solo escríbenos y cuéntanos sobre tus inquietudes y nos comunicaremos lo más pronto posible contigo</p>
+      <div class="credits bg--grey-dark">
+        <div class="credits__copyright">
+          <p class="text--p3 text--white">Todos los derechos reservados</p>
         </div>
-        <div class="contact__info">
-          <p>Ventas: <span>954 39893 43</span></p>
-          <p>Mail: <span>hola@ironwill.work</span></p>
-        </div>
-        <div class="menu-social">
-          <ul class="menu-social__list non-margin list-none">
-            <li class="menu-social__item"><a href="https://www.facebook.com/ironwillchile/" target="_blank" class="menu-social__link icon-facebook"></a><a href="https://www.instagram.com/ironwillchile/" target="_blank" class="menu-social__link icon-instagram"></a></li>
-          </ul>
-        </div>
+        <div class="credits__author"><a href="http://dilodigital.com" target="_blank">
+            <p class="text--p3 text--white">Diseñado por Dilodigital.com</p></a></div>
       </div>
-    </div>
-    <div class="credits bg--grey-dark">
-      <div class="credits__copyright">
-        <p class="text--p3 text--white">Todos los derechos reservados</p>
-      </div>
-      <div class="credits__author"><a href="http://dilodigital.com" target="_blank">
-          <p class="text--p3 text--white">Diseñado por Dilodigital.com</p></a></div>
     </div>
   </footer>
   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>

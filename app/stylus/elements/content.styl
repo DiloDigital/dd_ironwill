@@ -1,17 +1,13 @@
-edit()
-
+//edit()
 
 body
 	margin 0 auto
 	padding 0
-	
 	font-family Abel, Anton, sans-serif
 	font-size 16px
 	font-size 1rem
-	//min-height 100vh
 	width 100%
 	min-width b1	
-	
 
 .header
 	padding 0.5em 3%
@@ -19,27 +15,30 @@ body
 	+above(b2)
 		display flex
 		justify-content space-between
-	
-	.logotipo
-		float left
-		.slogan
-			width 260px
-			img
-				display block
-		+above(b2)
+	.logo
+		align-self center
+		.logotipo
+			float left
 			.slogan
-				width 300px
-	.toggle-menu
-		float right
-		font-size 2.3em
-		text-align center
-		color #143856ff
-		
-		position absolute
-		top 0.5em
-		right 3%
-		+above(b2)
-			display none
+				//width 260px
+				img
+					display block
+			+above(b2)
+				display flex
+				align-content center
+				img
+					width 300px
+		.toggle-menu
+			float right
+			font-size 2.3em
+			text-align center
+			color #143856ff
+			
+			position absolute
+			top 0.5em
+			right 3%
+			+above(b2)
+				display none
 		
 	.main-nav
 		clear both
@@ -69,6 +68,7 @@ body
 			+above(b2)
 				width 6em
 				text-align center
+				padding 0.6em
 				
 	.menu-social
 		text-align center
@@ -86,7 +86,6 @@ body
 			font-size 1.6em
 			color grey
 						
-
 .banner
 	+above(b2)
 		background-image url("img/videotablet.jpg") 
@@ -96,14 +95,8 @@ body
 		background-size cover
 	+above(b3)
 		background-image url("img/videopc.jpg")
-	
 	&__overlay
-		+above(b2)
-			background-color red
-			opacity 0.35	
-
 	&__cont
-		
 	&__content
 		.header-banner
 			line-height 1
@@ -114,7 +107,6 @@ body
 			+above(1280px)
 				padding-top 8vh
 				width 100%
-			
 		.video-banner
 			background-image url("img/videomovil.jpg")
 			background-repeat no-repeat
@@ -132,9 +124,7 @@ body
 .valores
 	&__header
 	&__cont
-		
 	&__item
-		
 		figure
 			padding 0
 			margin-bottom 3em
@@ -142,7 +132,6 @@ body
 			.valores-img
 				margin auto
 				width 120px
-				
 			figcaption
 				margin auto
 				text-align center
@@ -162,36 +151,29 @@ body
 				figcaption
 					margin-left 4%
 					
-					
 .servicios
 	&__header
 		margin-bottom 2em
 	&__cont
 		width 100%
 		margin auto
-		
 	&__item
 		padding-bottom 2em
 		margin auto
 		+above(b2)
 			width 32.9%
 			display inline-block
-		
 		figure
 			padding-bottom 3em
 			margin auto
-			
 			+above(b1)
 				padding 0 5%
 				margin 0 auto
-				
 			.servicio-img
 				margin auto
 				width 280px
-				
 				+above(b2)
 					width 100%
-				
 				img
 					border-radius 50%
 			figcaption
@@ -203,12 +185,10 @@ body
 						+between(b2,b3)
 							width 80%
 							margin auto
-		
 	&__button
 		padding 1.5em 0
 		text-align center
 		
-	
 .equipo
 	&__header
 		margin-bottom 3em
@@ -217,17 +197,14 @@ body
 	&__item
 		color white
 		margin-bottom 2em
-		
 		padding 0 3em
 		+above(b1)
 			padding 0
-
 		+between(b1,640px)
 			width 48%
 			display inline-block
 			margin auto	
 		+above(640px)
-			
 			display flex
 			flex-direction row
 			flex-wrap wrap
@@ -251,7 +228,6 @@ body
 			color grey
 		+above(b2)
 			display block
-
 	&__cont
 		display none
 		+above(b2)
@@ -264,12 +240,9 @@ body
 				margin auto
 				align-self center
 				width 100%
-
-
 	&__button
 		padding 1.5em 0
 		text-align center
-
 
 .footer
 	.contact
@@ -293,14 +266,12 @@ body
 		.menu-social
 			&__list
 			&__item
-				//list-style-type none
-				
+				display inline-block
 			&__link
 				padding 0.25em
 				font-size 1.6em
 				text-decoration none
 				color white
-			
 		&__info
 			margin-top 2em
 			margin-bottom 1.5em
@@ -319,7 +290,6 @@ body
 			margin-bottom 4em
 			text-align left
 			
-		
 	.contact-left
 		+above(b2)	
 			width 35%
@@ -327,7 +297,6 @@ body
 			margin-top 2em
 			text-align left
 		
-					
 	.credits
 		clear both
 		padding 1em 2em 
@@ -407,10 +376,9 @@ body
 	background-position center
 	background-repeat no-repeat
 	&__overlay
-		background-color red
-		opacity 0.35
+		//background-color red
+		//opacity 0.35
 	&__cont
-	
 	&__info
 		p
 			font-family Abel
@@ -456,7 +424,3 @@ body
 		background-image url("img/crecimiento/banner-middle_tab.jpg")
 	+above(b3)
 		background-image url("img/crecimiento/banner-middle_pc.jpg")
-			
-
-
-

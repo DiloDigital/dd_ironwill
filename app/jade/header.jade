@@ -1,21 +1,21 @@
-header.header#header(role="presentation").bg--white
+header.header#header(role="presentation").bg--white.max-width--extra
 	.logo
 		a(href="http://ironwill.work", title="Ironwill").logotipo
 			.slogan
-				img(src="img/ironwill-slogan.png", class="img-responsive", alt="")
+				img(src="img/ironwill-slogan.png", width="260", alt="")
 		.toggle-menu.icon-menu#menu
 
 	nav.main-nav#navigation(role="navigation")
 		.menu-social
 			ul.menu-social__list.non-margin
-				li.menu-social__item
-					a(href="https://www.facebook.com/ironwillchile/", target="_blank").menu-social__link.icon-facebook
-					a(href="https://www.instagram.com/ironwillchile/", target="_blank").menu-social__link.icon-instagram
-		
+				-var menu = { "icon-facebook": "https://facebook.com/ironwillchile/", "icon-instagram": "https://instagram.com/ironwillchile/" };
+				each val, key in menu
+					li.menu-social__item
+						a(href=val, target="_blank", class=key).menu-social__link
 		.main-nav__cont#target
 			ul.main-nav__list.non-margin
-				li.main-nav__item.list-none
-					a(href="http://ironwill.work/#servicios").main-nav__link Servicios
-					a(href="http://ironwill.work/rse.html").main-nav__link RSE
-					a(href="#contactanos").main-nav__link Contáctenos
+				-var menu = { "Servicios": "http://ironwill.work/#servicios", "RSE": "http://ironwill.work/rse.html", "Contáctenos": "#contactanos" };
+				each val, key in menu
+					li.main-nav__item.list-none
+						a(href=val, title="").main-nav__link= key
 		

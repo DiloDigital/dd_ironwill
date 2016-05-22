@@ -39,30 +39,30 @@
 // responsive
 
 .max-width
-    width 100%
-    max-width 1200px
-    margin-left auto
-    margin-right auto
-    overflow hidden
-    box-sizing border-box
-    &--extra
-      max-width 1400px
+  width 100%
+  max-width 1200px
+  margin-left auto
+  margin-right auto
+  overflow hidden
+  box-sizing border-box
+  &--extra
+    @extends .max-width
+    max-width 1480px
 
 .img-responsive
-    width 100%
-    max-width 100%
-    height auto
-    
-
+  width 100%
+  max-width 100%
+  height auto
+  
 .list-none
-    list-style-type none
+  list-style-type none
+
 .decoration-none
-    text-decoration none
+  text-decoration none
 
 .non-margin
-    margin 0
-    padding 0
-
+  margin 0
+  padding 0
 
 .wrap
   width 1200px 
@@ -72,46 +72,46 @@
 // color Background
 
 .bg
-    &--white
-        background-color white
-    &--red
-        background-color red
-    &--orange
-        background-color orange
-    &--grey-medium
-        background-color grey_medium
-    &--grey-dark
-        background-color grey_dark
+  &--white
+      background-color white
+  &--red
+      background-color red
+  &--orange
+      background-color orange
+  &--grey-medium
+      background-color grey_medium
+  &--grey-dark
+      background-color grey_dark
 
 // alineaciones
 
 .text
-    &--center
-        text-align center
-    &--left
-        text-align left
-    &--right
-        text-align right
+  &--center
+      text-align center
+  &--left
+      text-align left
+  &--right
+      text-align right
 
-    &--black
-        color black
-    &--white
-        color white
-    &--grey-light
-        color grey_light
-    &--grey
-        color grey
-    
-    &--main
-        font-size 1.4em
-    &--p2
-        font-size 0.9em
-    &--p3
-        font-size 0.75em
-    &--p4
-        font-size 1em
-    &--p5
-        font-size 0.85em
+  &--black
+      color black
+  &--white
+      color white
+  &--grey-light
+      color grey_light
+  &--grey
+      color grey
+  
+  &--main
+      font-size 1.4em
+  &--p2
+      font-size 0.9em
+  &--p3
+      font-size 0.75em
+  &--p4
+      font-size 1em
+  &--p5
+      font-size 0.85em
         
         
 .title
@@ -125,6 +125,8 @@
       
   &--sub2
     font-size 2.5em
+    &-extra
+      font-size 2em
   &--sub3
     font-size 1.59em
   &--sub4
