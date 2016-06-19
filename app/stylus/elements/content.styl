@@ -7,7 +7,7 @@ body
 	font-size 16px
 	font-size 1rem
 	width 100%
-	min-width b1	
+	min-width 300px	
 
 .header
 	padding 0.5em 3%
@@ -171,7 +171,10 @@ body
 				margin 0 auto
 			.servicio-img
 				margin auto
-				width 280px
+				width 80%
+				+above(b1)
+					width 280px
+				
 				+above(b2)
 					width 100%
 				img
@@ -299,16 +302,25 @@ body
 		
 	.credits
 		clear both
-		padding 1em 2em 
+		padding 1em 2em
+		text-align center
+		//display block
+		//width 100%
+		
 		&__copyright
-			display inline-block
+			+above(b1)
+				display inline-block
+				text-align left
+				width 49%
 		&__author
-			float right
-			display inline-block
 			a
 				text-decoration none
 				p
 					color yellow
+			+above(b1)
+				display inline-block
+				text-align right
+				width 50%
 		+above(b2)
 			display flex
 			justify-content space-between
